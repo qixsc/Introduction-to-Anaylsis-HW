@@ -80,7 +80,8 @@
     If $b^\beta < y$, then assume $\beta + \dfrac{1}{n} \in A$. Thus $b^{\beta + \frac{1}{n}} = b^\beta \cdot b^\frac{1}{n} > b^\beta \cdot 1 = b^\beta$ for all $n \in \mathbb{N}$.
     Then, we want to proof $b^{\beta + \frac{1}{n}} < y$, thus we check the inequality $b^{\beta + \frac{1}{n}} - b^\beta < y - b^\beta$ for some $n \in \mathbb{N}$.
     \begin{quote}
-        {\bf Proof.} $b^{\beta + \frac{1}{n}} \leq b*(\dfrac{n}{\beta+1})$
+        {\bf Proof.} $b^{\beta + \frac{1}{n}} - b^\beta = b^\beta(b^{\frac{1}{n}} - 1)$. Then, we want to proof $b^{\frac{1}{n}} -1 \rightarrow 0$ when $n \rightarrow \infty$.
+        Since $b^{\frac{1}{n}} \leq \dfrac{1}{n}$
     \end{quote}
     
     $\beta \in A$ by the definition of $A$(contradiction).
