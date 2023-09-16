@@ -75,12 +75,12 @@
     By Bernoulli's Inequality(In Bartle's book page.35) and let $b = 1+c$ with $c \in \mathbb{R},\ c > 0$, then $(1+c)^n \geq 1 + nc$.
     Then, we can find some $n \in \mathbb{N}$ s.t. $c > \dfrac{y}{n}$. Therefore, $b^n = (1+c)^n \geq 1+nc > y$ and $n$ is upper bound of $A$. Thus, by completeness of $\mathbb{R}$, there exists $\beta \in \mathbb{R}$ be $\sup A$. 
     
-    Assume $b^\beta < y$,
+    Assume $b^\beta < y$, then $\beta \in A$ by the definition of $A$(contradiction).
+    Therefore, $b^\beta \geq y$.
     
-    we can find a real number $r$ s.t. $b^\beta < r < y$. Therefore, we can find $x \in A$ s.t $b^x \geq r$ which is contradiction to $\beta$ is upper bound of $A$.
-    Then, $b^\beta \geq y$. 
-
-    If $\beta > y$, we can find a real number $r'$ s.t. $b^\beta > r' > y$. Therefore, we can find $x \in A$ s.t $b^x \leq r'$. 
+    If $b^\beta > y$, 
+    
+    we can find a real number $r'$ s.t. $b^\beta > r' > y$. Therefore, we can find $x \in A$ s.t $b^x \leq r'$. 
     Thus, $\beta$ is not least upper bound of $A$.
 
     These two line implies the supremun of $A$, $\beta$, is the unique real number s.t. $b^\beta = y$ since the supremun is unique.
