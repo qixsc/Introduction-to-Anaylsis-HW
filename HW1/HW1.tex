@@ -70,12 +70,18 @@
     
     Ex. Let $f(x) = \sin(x),\ g(x) = \cos(x),\ X = (0, 2\pi)$, then $-2 < -\sqrt{2} < 2$.
 
+    \newpage
+
     \item Let $A = \lbrace x \mid x \in \mathbb{R},\ b^x < y\rbrace$.
     
     By Bernoulli's Inequality(In Bartle's book page.35) and let $b = 1+c$ with $c \in \mathbb{R},\ c > 0$, then $(1+c)^n \geq 1 + nc$.
     Then, we can find some $n \in \mathbb{N}$ s.t. $c > \dfrac{y}{n}$. Therefore, $b^n = (1+c)^n \geq 1+nc > y$ and $n$ is upper bound of $A$. Thus, by completeness of $\mathbb{R}$, there exists $\beta \in \mathbb{R}$ be $\sup A$. 
     
-    If $b^\beta < y$, then assume $\beta + \dfrac{1}{n} \in A$. Thus $y > b^{\beta + \frac{1}{n}} = b^\beta \cdot b^\frac{1}{n} > b^\beta \cdot 1$ for all $n \in \mathbb{N}$
+    If $b^\beta < y$, then assume $\beta + \dfrac{1}{n} \in A$. Thus $b^{\beta + \frac{1}{n}} = b^\beta \cdot b^\frac{1}{n} > b^\beta \cdot 1 = b^\beta$ for all $n \in \mathbb{N}$.
+    Then, we want to proof $b^{\beta + \frac{1}{n}} < y$, thus we check the inequality $b^{\beta + \frac{1}{n}} - b^\beta < y - b^\beta$ for some $n \in \mathbb{N}$.
+    \begin{quote}
+        {\bf Proof.} $b^{\beta + \frac{1}{n}} \leq b*(\dfrac{n}{\beta+1})$
+    \end{quote}
     
     $\beta \in A$ by the definition of $A$(contradiction).
     Therefore, $b^\beta \geq y$.
