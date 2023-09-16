@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.9.11)  14 SEP 2023 18:32
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.9.11)  16 SEP 2023 15:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/9ryan/OneDrive - 國立陽明交通大學/HW/分導/HW1.tex"
-(c:/Users/9ryan/OneDrive - 國立陽明交通大學/HW/分導/HW1.tex
+**"c:/Users/9ryan/OneDrive - 國立陽明交通大學/HW/分導/HW1/HW1.tex"
+(c:/Users/9ryan/OneDrive - 國立陽明交通大學/HW/分導/HW1/HW1.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-16>
 (C:\Users\9ryan\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -488,11 +488,11 @@ L3 programming layer <2022/08/05>
  ) 
 Here is how much of TeX's memory you used:
  7043 strings out of 411164
- 181244 string characters out of 5809999
+ 181256 string characters out of 5809999
  1861394 words of memory out of 5000000
  27504 multiletter control sequences out of 15000+600000
  532927 words of font info for 106 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,6n,93p,358b,259s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,6n,93p,362b,259s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on HW1.xdv (1 page, 16236 bytes).
