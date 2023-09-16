@@ -81,11 +81,14 @@
     Then, we want to proof $b^{\beta + \frac{1}{n}} < y$, thus we check the inequality $b^{\beta + \frac{1}{n}} < y$ for some $n \in \mathbb{N}$.
     \begin{quote}
         {\bf Proof.} $b^{\beta + \frac{1}{n}} = b^\beta b^{\frac{1}{n}}$. Then, we want to proof $b^{\frac{1}{n}} -1 \rightarrow 0$ when $n \rightarrow \infty$.
-        Since $b^{\frac{1}{n}} \leq $ and $\dfrac{y}{b^\beta}$ is a positive real number, there exists some $n \in \mathbb{N}$ s.t. 
+        
+        Since $b^{\frac{1}{n}} = (1+c)^\frac{1}{n} \leq 1 + \dfrac{1}{n} c$ and $\dfrac{y}{b^\beta}$ is a positive real number which is greater than $1$, 
+        there exists some $n \in \mathbb{N}$ s.t. $n > \dfrac{c\cdot b^\beta}{y-b^\beta} > 0$. In the other world $1 + \dfrac{c}{n} < \dfrac{y}{b^\beta}$.
+        Therefore, $b^{\beta + \frac{1}{n}} < y$.
     \end{quote}
     
-    $\beta \in A$ by the definition of $A$(contradiction).
-    Therefore, $b^\beta \geq y$.
+    Thus, $b^{\beta + \frac{1}{n}}\in A\Rightarrow b^\beta$ is not a upper bound of $A$.
+    Therefore, $b^\beta$ should greater or equal to $y$.
     
     If $b^\beta > y$,     
     we can find a real number $r'$ s.t. $b^\beta > r' > y$. Therefore, we can find $x \in A$ s.t $b^x \leq r'$. 
