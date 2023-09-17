@@ -89,8 +89,9 @@
     Thus, $b^{\beta + \frac{1}{n}}\in A\Rightarrow b^\beta$ is not a upper bound of $A$.
     Therefore, $b^\beta$ should greater or equal to $y$.
     
-    If $b^\beta > y$, assume exists $n \in \mathbb{N}$ s.t. $b^{\beta - \frac{1}{n}} > y$. 
-    
+    If $b^\beta > y$, assume exists $n \in \mathbb{N}$ s.t. $b^{\beta - \frac{1}{n}} > y$.
+    Then, $b^{\beta - \frac{1}{n}} = \dfrac{b^\beta}{b^\frac{1}{n}} \geq \dfrac{b^\beta}{1 + \frac{1}{n}c}$. And since $\dfrac{b^\beta}{y}-1$ is a positive real number by $b^\beta > y$, 
+    there exists some $n \in \mathbb{n}$ s.t. $\dfrac{c}{n} > \dfrac{b^\beta}{y}-1$ by Archimedeam Property. Therefore, $b^\beta$ is not the least upper bound of $A$(contradiction).
 
     These two line implies the supremun of $A$, $\beta$, is the unique real number s.t. $b^\beta = y$ since the supremun is unique.
 \end{enumerate}
