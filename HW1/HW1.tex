@@ -1,6 +1,5 @@
 \documentclass[12pt]{article}
 
-
 \topmargin -40pt
 \marginparwidth 0pt
  \oddsidemargin  -40pt
@@ -72,9 +71,28 @@
 
     \newpage
 
-    \item Let $A = \lbrace x \mid x \in \mathbb{R},\ b^x < y\rbrace$.
+    \item {\bf Proof Bernoulli's Inequality and its Generalization of exponent}
     
-    By Bernoulli's Inequality(In Bartle's book page.35) and let $b = 1+c$ with $c \in \mathbb{R},\ c > 0$, then $(1+c)^n \geq 1 + nc$ with all $n \in N$.
+    Statement. For $x > 0$
+    
+    $(1+x)^n \geq 1+nx,\ \forall n\in \mathbb{N}\\
+    (1+x)^r \leq 1+rx,\ \forall 0\leq r\leq 1$
+    \begin{quote}
+        {\bf Proof.} For $n\in \mathbb{N}$\begin{enumerate}[(1)]
+            \item $(1+x)^1 \geq 1+x$
+            \item $(1+x)^2 = 1 + 2x + x^2 \geq 1 + 2x$
+            \item[] Assume $n = k$ is true
+            \item[(k+1)] $(1+x)^{k+1} = (1+x)^k(1+x) \geq (1+kx)(1+x) = 1 + kx + x + kx^2 \geq 1 + (k+1)x$ is true
+        \end{enumerate}
+        Then, the first line is proof by math induction.
+
+        Since $((1+x)^r)' = (r-1) (1+x)^{r-1} \leq r = (1+rx)'$, for all $0\leq r \leq 1$ and $(1+x)^r = 1+rx$ when $x = 0$,
+        $(1+x)^r \leq 1+rx$, for all $x > 0$ and $0\leq r \leq 1$.
+    \end{quote}
+    
+    Let $A = \lbrace x \mid x \in \mathbb{R},\ b^x < y\rbrace$.
+    
+    Let $b = 1+c$ with $c \in \mathbb{R},\ c > 0$, then $(1+c)^n \geq 1 + nc$ with all $n \in N$.
     Then, we can find some $n \in \mathbb{N}$ s.t. $c > \dfrac{y}{n}$. Therefore, $b^n = (1+c)^n \geq 1+nc > y$ and $n$ is upper bound of $A$. Thus, by completeness of $\mathbb{R}$, there exists $\beta \in \mathbb{R}$ be $\sup A$. 
     
     If $b^\beta < y$, then assume $\beta + \dfrac{1}{n} \in A$. Thus $b^{\beta + \frac{1}{n}} = b^\beta \cdot b^\frac{1}{n} > b^\beta \cdot 1 = b^\beta$ for all $n \in \mathbb{N}$.
