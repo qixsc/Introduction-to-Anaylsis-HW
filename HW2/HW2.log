@@ -3,8 +3,8 @@ entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/9ryan/OneDrive - 國立陽明交通大學/HW/分導/HW1/HW1.tex"
-(c:/Users/9ryan/OneDrive - 國立陽明交通大學/HW/分導/HW1/HW1.tex
+**"c:/Users/9ryan/OneDrive - 國立陽明交通大學/HW/分導/HW2/HW2.tex"
+(c:/Users/9ryan/OneDrive - 國立陽明交通大學/HW/分導/HW2/HW2.tex
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-16>
 (C:\Users\9ryan\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -423,8 +423,8 @@ Package fontspec Info: Font family 'TaipeiSansTCBeta-Regular(0)' created for
 (fontspec)             <->"TaipeiSansTCBeta-Regular/BI/OT:script=hani;language=dflt;"
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
- (HW1.aux)
-\openout1 = `HW1.aux'.
+ (HW2.aux)
+\openout1 = `HW2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
 LaTeX Font Info:    ... okay on input line 38.
@@ -472,27 +472,21 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
  [1
 
-] [2] (HW1.aux)
+] (HW2.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7047 strings out of 411164
- 181407 string characters out of 5809999
- 1859394 words of memory out of 5000000
- 27507 multiletter control sequences out of 15000+600000
- 532935 words of font info for 107 fonts, out of 8000000 for 9000
+ 7014 strings out of 411164
+ 180821 string characters out of 5809999
+ 1847394 words of memory out of 5000000
+ 27475 multiletter control sequences out of 15000+600000
+ 523573 words of font info for 82 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,6n,93p,362b,335s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,6n,93p,290b,259s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on HW1.xdv (2 pages, 21156 bytes).
+Output written on HW2.xdv (1 page, 1604 bytes).
