@@ -71,46 +71,41 @@
 
     \newpage
 
-    \item {\bf Proof Bernoulli's Inequality and its Generalization of exponent}
-    
-    Statement. For $x > 0$
-    
-    $(1+x)^n \geq 1+nx,\ \forall n\in \mathbb{N}\\
-    (1+x)^r \leq 1+rx,\ \forall 0\leq r\leq 1$
-    \begin{quote}
-        {\bf Proof.} For $n\in \mathbb{N}$\begin{enumerate}[(1)]
-            \item $(1+x)^1 \geq 1+x$
-            \item $(1+x)^2 = 1 + 2x + x^2 \geq 1 + 2x$
-            \item[] Assume $n = k$ is true
-            \item[(k+1)] $(1+x)^{k+1} = (1+x)^k(1+x) \geq (1+kx)(1+x) = 1 + kx + x + kx^2 \geq 1 + (k+1)x$ is true
-        \end{enumerate}
-        Then, the first line is proof by math induction.
+    \item Using the steps from Rudin's book.
+    \begin{enumerate}[(a)]
+        \item For any $n \in \mathbb{N}$, $b^n -1 \geq n(b-1)$
+            \begin{quote}
+            {\bf Proof.}\begin{itemize}
+                \item $n = 1$, $b -1 \geq 1(b-1)$ trivially true
+                \item Assume $n = k$, $b^k-1 \geq k(b-1)$
+                \item $n = k+1$, $b^{k+1} -1 = (b-1)(b^k + b^{k-1} + \cdots + 1) \geq (b-1)(k+1)$ since $b \geq 1$
+            \end{itemize}
+            Then, by math induction, $b^n-1 \geq n(b-1)$ for all $n \in \mathbb{N}$
+        \end{quote}
+        \item Then, $b-1 \geq n(b^{1/n} - 1)$\begin{quote}
+            {\bf Proof.}$(b^{1/n})^n -1 \geq n(b^{1/n} -1)$
+        \end{quote}
+        \item If $t > 1$ and $n > \dfrac{b-1}{t-1}$, then $b^{1/n} < t$\begin{quote}
+            {\bf Proof.} $n > \dfrac{b-1}{t-1} \geq \dfrac{n(b^{1/n} -1)}{t-1}$, then $t-1 > b^{1/n} -1 \Rightarrow b^{1/n} < t$ for $t > 1$
+        \end{quote}
+        \item If $w$ s.t. $b^w < y$, then exists some $n \in \mathbb{N}$ s.t. $b^{w + 1/n} < y$\begin{quote}
+            {\bf Proof.} $b^{w + 1/n} = b^w *b^{1/n}$, then from (c), we can know that there exists some $n \in \mathbb{N}$ s.t. $b^{1/n} < \dfrac{y}{b^w}$ since $\dfrac{y}{b^w} > 1$. Thus, $b^{w + 1/n} < y$ if $b^w < y$ with some $n \in \mathbb{N}$
+        \end{quote}
+        \item If $b^w > y$, then $b^{w - 1/n} > y$\begin{quote}
+            {\bf Proof.} $b^{w - 1/n} = \dfrac{b^w}{b^1/n}$. By (c), there exists some $n \in \mathbb{N}$ s.t. $b^{1/n} \leq \dfrac{b^w}{y}$. Thus, $b^{w-1/n} > y$ if $b^w > y$ for some $n \in \mathbb{N}$
+        \end{quote}
+        \item $A = \lbrace w \mid b^w < y\rbrace$, $x = sup A$ satisfies $b^x = y$\begin{quote}
+            By Bernoulli's inequality, $b^n = (1 + c)^n \geq 1 + nc$ by let $c = b-1 > 0$, then by Archimedean property, there exists some $n \in \mathbb{N}$ s.t. $b^n > 1 + nc > y$. Thus, $A$ is bounded above.
+            And since $b^{-n} = \dfrac{1}{b^n}$, there exists some $n \in \mathbb{N}$ s.t. $b^n \geq \dfrac{1}{y}\Rightarrow b^{-n} \leq y$. Thus, $A \neq \emptyset$.
 
-        Since $((1+x)^r)' = (r-1) (1+x)^{r-1} \leq r = (1+rx)'$, for all $0\leq r \leq 1$ and $(1+x)^r = 1+rx$ when $x = 0$,
-        $(1+x)^r \leq 1+rx$, for all $x > 0$ and $0\leq r \leq 1$.
-    \end{quote}
-    
-    Let $A = \lbrace x \mid x \in \mathbb{R},\ b^x < y\rbrace$.
-    
-    Let $b = 1+c$ with $c \in \mathbb{R},\ c > 0$, then $(1+c)^n \geq 1 + nc$ with all $n \in N$.
-    Then, we can find some $n \in \mathbb{N}$ s.t. $c > \dfrac{y}{n}$. Therefore, $b^n = (1+c)^n \geq 1+nc > y$ and $n$ is upper bound of $A$. Thus, by completeness of $\mathbb{R}$, there exists $\beta \in \mathbb{R}$ be $\sup A$. 
-    
-    If $b^\beta < y$, then assume $\beta + \dfrac{1}{n} \in A$. Thus $b^{\beta + \frac{1}{n}} = b^\beta \cdot b^\frac{1}{n} > b^\beta \cdot 1 = b^\beta$ for all $n \in \mathbb{N}$.
-    Then, we want to proof $b^{\beta + \frac{1}{n}} < y$, thus we check the inequality $b^{\beta + \frac{1}{n}} < y$ for some $n \in \mathbb{N}$.
-    \begin{quote}
-        {\bf Proof.} $b^{\beta + \frac{1}{n}} = b^\beta b^{\frac{1}{n}}$. 
-        Since $b^{\frac{1}{n}} = (1+c)^\frac{1}{n} \leq 1 + \dfrac{1}{n} c$ and $\dfrac{y}{b^\beta}$ is a positive real number which is greater than $1$, 
-        by Archimedeam Property there exists some $n \in \mathbb{N}$ s.t. $n > \dfrac{c\cdot b^\beta}{y-b^\beta} > 0$. In the other world $1 + \dfrac{c}{n} < \dfrac{y}{b^\beta}$.
-        Therefore, $b^{\beta + \frac{1}{n}} < y$.
-    \end{quote}
-    
-    Thus, $b^{\beta + \frac{1}{n}}\in A\Rightarrow b^\beta$ is not a upper bound of $A$.
-    Therefore, $b^\beta$ should greater or equal to $y$.
-    
-    If $b^\beta > y$, assume exists $n \in \mathbb{N}$ s.t. $b^{\beta - \frac{1}{n}} > y$.
-    Then, $b^{\beta - \frac{1}{n}} = \dfrac{b^\beta}{b^\frac{1}{n}} \geq \dfrac{b^\beta}{1 + \frac{1}{n}c}$. And since $\dfrac{b^\beta}{y}-1$ is a positive real number by $b^\beta > y$, 
-    there exists some $n \in \mathbb{n}$ s.t. $\dfrac{c}{n} > \dfrac{b^\beta}{y}-1$ by Archimedeam Property. Therefore, $b^\beta$ is not the least upper bound of $A$(contradiction).
+            Thus, by the completement of real number, there exists $x = \sup A$.
 
-    These two line implies the supremun of $A$, $\beta$, is the unique real number s.t. $b^\beta = y$ since the supremun is unique.
+            If $b^x < y$, from (d), $b^{x + 1/n} < y\Rightarrow x + 1/n \in A$. Thus, $x$ is not upper bound of $A$.
+            If $b^x > y$, form (f), $b^{x-1/n} > y$. Then, $x$ is not the least upper bound of $A$.
+
+            So, $b^x$ must to be equal to $y$.
+        \end{quote}
+        \item $x$ is unique because it is supremun of $A$.
+    \end{enumerate}
 \end{enumerate}
 \end{document}
