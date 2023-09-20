@@ -39,6 +39,20 @@
 \begin{enumerate}
     \item For any Cauchy sequence $\lbrace x_n\rbrace_{n=1}^\infty$, for all $\epsilon > 0$, $\exists N \in \mathbb{N}$ s.t. for all $n, m > N,\ |x_n - x_m| \leq \epsilon$
 
-    Then, 
+    Then, since for any convergence sequence, it is Cauchy sequence
+
+    \item \begin{enumerate}[(a)]
+        \item If we can find infinite many points labeled by $n_1, n_2, \cdots$ s.t. $\lbrace x_{n_k}\rbrace_{k=1}^\infty$ is decreasing, thus $\lbrace x_n\rbrace_{n=1}^\infty$ have a decreasing subsequence.
+        
+        If not, then we only can find finite points s.t. $\lbrace x_{n_k}\rbrace_{k=1}^l$ is decreasing. Thus, we name the last element of the decreasing sequence as $N$.
+        Thus, we can say that $n_1' = N + 1$, since $n_1'$ is not in decreasing sequence, implies that $\exists n_2' > n_1' \Rightarrow x_{n_2'} \geq x_{n_1'}$.
+        And doing the same way,  we can find $n_1' < n_2' < n_3' < \cdots$ s.t. $\lbrace x_{n_i'}\rbrace_{i=1}^\infty$ is a increasing subsequence.
+
+        Then, every sequence in $\mathbb{R}$ either has an increasing subsequence or a decreasing subsequence
+
+        \item Since every sequence have either increasing or decreasing subsequence and $\lbrace x_n \rbrace$ is bounded,
+        then by monotone convergence theorem, the subsequence converges.
+
+    \end{enumerate} 
 \end{enumerate}
 \end{document}
