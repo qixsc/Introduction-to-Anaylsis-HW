@@ -37,9 +37,25 @@
 \begin{document}
 \maketitle
 \begin{enumerate}
-    \item For any Cauchy sequence $\lbrace x_n\rbrace_{n=1}^\infty$, for all $\epsilon > 0$, $\exists N \in \mathbb{N}$ s.t. for all $n, m > N,\ |x_n - x_m| \leq \epsilon$
+    \item Without loss of generality, we take a sequence which is increasing. 
+    Then, if $\lbrace x_n\rbrace$ is not Cauchy then there exists some $\epsilon > 0$ s.t. for any $N \in \mathbb{N}$, $n \geq m \geq N\Rightarrow x_n - x_m \geq \epsilon$.
+    Then, we want to proof "not Cauchy implies not bounded"\begin{quote}
+        if $\lbrace x_n\rbrace$ is bounded above by $y$, then choose $N = 1$ and $n_2 - n_1 > \epsilon$ implies $n_3 - n_2 > \epsilon$ and $n_4 - n_3 > \epsilon\Rightarrow n_k - n_1 > (k-1)\epsilon$.
+        By Archimedean property, $(k-1)\epsilon > y$ for some $k$. Thus, $y$ is not upper bound of $\lbrace x_n \rbrace$ contradiction.
+    \end{quote}
+    That is, bounded and monotone sequence is Cauchy.
+    For any bounded convergence sequence, it is Cauchy and converges in $\mathbb{R}$.
+    Therefore, for any $\epsilon > 0$, $\exists N \in \mathbb{N}$ s.t. $|x - x_n| < \epsilon$ for some $n > N$.
+    We want to proof $x$ is least upper bound of $\lbrace x_n\rbrace$.\begin{quote}
+        For $x - \dfrac{1}{k}$, exists $0 < \epsilon < \dfrac{1}{k}\Rightarrow$ there exists some $n \in \mathbb{N}$ s.t. $x - x_n < \epsilon < \dfrac{1}{k}$.
+        That is, $x_n > x-\dfrac{1}{k}$ for all $k \in \mathbb{N}$.
 
-    Then, since for any convergence sequence, it is Cauchy sequence
+        Since $x_n$ is increasing, if there exists some $n \in\mathbb{N}$ s.t. $x_n > x$, 
+        then there exists some $\epsilon > 0$ s.t. $|x_n -x| > \epsilon$ contradiction to the convergence.
+        Thus, $x \geq x_n$ for all $n$.
+    \end{quote}
+    Therefore, $x$ is the least upper bound of the sequence.
+    Thus, for any Cauchy sequence converges in $\mathbb{R}$, $\mathbb{R}$ has least upper bound property.
 
     \item \begin{enumerate}[(a)]
         \item If we can find infinite many points labeled by $n_1, n_2, \cdots$ s.t. $\lbrace x_{n_k}\rbrace_{k=1}^\infty$ is decreasing, thus $\lbrace x_n\rbrace_{n=1}^\infty$ have a decreasing subsequence.
@@ -52,7 +68,26 @@
 
         \item Since every sequence have either increasing or decreasing subsequence and $\lbrace x_n \rbrace$ is bounded,
         then by monotone convergence theorem, the subsequence converges.
-
     \end{enumerate} 
+    
+    \newpage
+    \item \begin{align*}
+        x_n = \dfrac{1}{n+1} + \dfrac{1}{n+2} + \cdots + &\dfrac{1}{2n}
+        \notag
+        \\x_{n+1} = \dfrac{1}{n+2} + \dfrac{1}{n+3} + \cdots + &\dfrac{1}{2n} + \dfrac{1}{2n+1} + \dfrac{1}{2n+2}
+    \end{align*}
+
+    Thus, $x_{n+1} - x_n = \dfrac{1}{2n+1} + \dfrac{1}{2n+2} - \dfrac{1}{n+1} = \dfrac{1}{2n+1} - \dfrac{1}{2n+2} = \dfrac{1}{(2n+1)(2n+2)}$.
+    And $x_{n+k+1} - x_{n+k} = \dfrac{1}{(2(n+k)+1)(2(n+k)+2)} < \dfrac{1}{(2n+1)(2n+2)}$.
+
+    Thus, for any $\epsilon > 0$, there exists $n, m \in \mathbb{N}, m>n$ s.t. $|x_{n} - x_{n+1}| = \dfrac{1}{(2n+1)(2n+1)} \leq \dfrac{\epsilon}{m-n}$.
+    Then, $|x_{m} - x_n| \leq |x_m - x_{m-1}| + \cdots + |x_{n+1} - x_n| \leq (m-n) \dfrac{\epsilon}{m-n} = \epsilon$.
+
+    Then, $\lbrace x_n\rbrace$ is Cauchy $\Rightarrow$ converges. 
+
+    \item If $\displaystyle\liminf_{n \to \infty} x_n = \infty$, then assume $\lbrace x_n\rbrace$ is bounded above by $y$.
+    Then, $x_n < y$ for all $n \in \mathbb{N}$ but $\liminf x_n = \infty > y$ contradiction.
+
+    Thus, $\lbrace x_n \rbrace$ is not bounded above$\Rightarrow$ diverges to $\infty$.
 \end{enumerate}
 \end{document}

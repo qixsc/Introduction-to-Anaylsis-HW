@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.9.11)  20 SEP 2023 16:13
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.9.11)  20 SEP 2023 19:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -473,26 +473,26 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
  [1
 
-] (HW2.aux)
+] [2] (HW2.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7041 strings out of 411164
- 181202 string characters out of 5809999
- 1852394 words of memory out of 5000000
- 27502 multiletter control sequences out of 15000+600000
+ 7045 strings out of 411164
+ 181312 string characters out of 5809999
+ 1859394 words of memory out of 5000000
+ 27506 multiletter control sequences out of 15000+600000
  532927 words of font info for 106 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,6n,93p,292b,259s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,9n,93p,292b,259s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on HW2.xdv (1 page, 10248 bytes).
+Output written on HW2.xdv (2 pages, 22672 bytes).
