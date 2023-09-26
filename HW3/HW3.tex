@@ -37,6 +37,56 @@
 \begin{document}
 \maketitle
 \begin{enumerate}
-    \item 
+    \item \begin{enumerate}
+        \item[($d_1$)] \begin{enumerate}[a.]
+            \item positive definite: $d(x, y) = (x-y)^2 \geq 0$ for any $x, y\in \mathbb{R}$ check
+            \item 0 $\iff$ equal:\begin{enumerate}
+                \item[($\implies$)] $d(x, y) = 0 \implies x - y = 0\implies x = y$
+                \item[($\impliedby$)] $d(x, y) = (x-y)^2 = 0^2 = 0$ check
+            \end{enumerate}
+            \item triangle inequality: $4 = (2 - 0)^2 = d(2, 0) > 1 + 1 = d(2, 1) + d(1, 0)$ no
+        \end{enumerate}
+        Thus, $d_1$ is not a metric.
+        
+        \item[($d_2$)] \begin{enumerate}[a.]
+            \item positive definite: since $| x-y| \geq 0$, then $\dfrac{|x-y|}{1+|x-y|} \geq 0$ check
+            \item 0 $\iff$ equal:\begin{enumerate}
+                \item[($\implies$)] since $0 = d(x, y) = \dfrac{0}{1+0}\implies x-y = 0\implies x = y$
+                \item[($\impliedby$)] since $x = y$, $d(x, y) = \dfrac{0}{1 + 0} = 0$ check
+            \end{enumerate}
+            \item triangle inequality: If $z$ is not in $(x, y)$, the triangle inequality trivially holds.
+            
+            Then, WLOG, suppose $x < z < y$, then 
+            
+            $\dfrac{z-x}{1 + z - x} + \dfrac{y-z}{1 + y - z} > \dfrac{z-x}{1 + (z-x) + (y-z)} + \dfrac{y-z}{1 + (y-z) + (z-x)}\\ = \dfrac{y-x}{1 + (y-z) + (z-x)} = \dfrac{y-x}{1 + y -x}$
+        \end{enumerate}
+        Thus, $d_2$ is a metric.
+    \end{enumerate}
+
+    \item We want to prove $s_{n+1} - s_n < \epsilon$ for all $\epsilon > 0$ which means $x_n \to 0$.
+    \begin{quote}
+        Since $\displaystyle\limsup_{n \to \infty} \dfrac{x_{n+1}}{x_n} < 1$, 
+        there exists some $N\in \mathbb{N}$ s.t. $\dfrac{x_{n+1}}{x_n} < 1$ for all $n > N$.
+
+        Thus, $\lbrace x_n\rbrace_{n = N}^\infty$ is a monotone decreasing sequence bounded below by $0$.
+
+        For any $r < 1$, $\dfrac{1}{r} > 1$ and there exists some $k \in \mathbb{n}$ s.t. $(\dfrac{1}{r})^k > n$ for all $n\in \mathbb{N}$,
+        then $r^k < \dfrac{1}{n}$. Therefore, $1-r < 1\implies (1-r)^k \to 0$ for $k \to \infty$
+        
+        Since $(0, 1)$ is open, we can find some $r$ s.t.  $\dfrac{x_{n+1}}{x_n} < r < 1$ for all $n > N$. 
+        Then, $\lim x_n - x_{n+1} = \lim x_n(1-\dfrac{x_{n+1}}{x_n}) < \lim x_N (1 - r)^{n-N} = 0$.
+
+        Thus, $s_n$ is Cauchy$\implies s_n$ is convergence.
+    \end{quote}
+
+
+    \item \begin{enumerate}[(a)]
+        \item WLOG, suppose $\lbrace x_n \rbrace$ is positive and monotone increasing.
+        
+        Then, $\sigma_{n+1} - \sigma_n = (\dfrac{n}{n+1} S_n + \dfrac{x_{n+1}}{n+1}) - S_n = \dfrac{1}{n+1}S_n + \dfrac{x_{n+1}}{n+1} > 0$.
+        Therefore, $\sigma_n$ is monotone increasing.
+
+        \item 
+    \end{enumerate}
 \end{enumerate}
 \end{document}
