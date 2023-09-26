@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1695731574 "HW3.xdv" "HW3.pdf" "HW3" 1695731575 0
-  "HW3.xdv" 1695731574 12568 6c1f4c2afe54c62856f2288c44461e15 "xelatex"
+["xdvipdfmx"] 1695734019 "HW3.xdv" "HW3.pdf" "HW3" 1695734020 0
+  "HW3.xdv" 1695734019 13364 4d8799c710a2e2c990bc3371fb8db62b "xelatex"
   (generated)
   "HW3.pdf"
   (rewritten before read)
-["xelatex"] 1695731573 "c:/Users/9ryan/OneDrive - 國立陽明交通大學/HW/分導/HW3/HW3.tex" "HW3.xdv" "HW3" 1695731575 0
+["xelatex"] 1695734017 "c:/Users/9ryan/OneDrive - 國立陽明交通大學/HW/分導/HW3/HW3.tex" "HW3.xdv" "HW3" 1695734020 0
   "C:/Users/9ryan/AppData/Local/MiKTeX/miktex/data/le/xetex/xelatex.fmt" 1694431001 36493460 579f36f8d620c408c8ec6487981a8fe3 ""
   "C:/Users/9ryan/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmb7t.tfm" 1136743454 2172 fd0c924230362ff848a33632ed45dc23 ""
   "C:/Users/9ryan/AppData/Local/Programs/MiKTeX/fonts/tfm/adobe/times/ptmri7t.tfm" 1136743454 2288 f478fc8fed18759effb59f3dad7f3084 ""
@@ -59,9 +59,9 @@
   "C:/Users/9ryan/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.cfg" 1659726270 408 7369c27beaa819c5f46de3795b22ee3e ""
   "C:/Users/9ryan/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJK.sty" 1659726270 183137 ed372550124703b2b73cbcc0b47cb20f ""
   "C:/Users/9ryan/AppData/Local/Programs/MiKTeX/tex/xelatex/xecjk/xeCJKfntef.sty" 1659726270 39577 b470f8a1dbecc9c45c9bf05ca7db9188 ""
-  "HW3.aux" 1695731574 32 3985256e7290058c681f74d7a3565a19 "xelatex"
-  "HW3.tex" 1695731572 3633 52673053a8a9f01e4feea9b3736a936c ""
-  "c:/Users/9ryan/OneDrive - 國立陽明交通大學/HW/分導/HW3/HW3.tex" 1695731572 3633 52673053a8a9f01e4feea9b3736a936c ""
+  "HW3.aux" 1695734019 32 044b7f8fc9779af7531264e0c5c84b6d "xelatex"
+  "HW3.tex" 1695734017 3878 4766c5c04e4b5ecfc2863ccabe2fc34b ""
+  "c:/Users/9ryan/OneDrive - 國立陽明交通大學/HW/分導/HW3/HW3.tex" 1695734017 3878 4766c5c04e4b5ecfc2863ccabe2fc34b ""
   (generated)
   "HW3.aux"
   "HW3.log"

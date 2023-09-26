@@ -74,19 +74,21 @@
         then $r^k < \dfrac{1}{n}$. Therefore, $1-r < 1\implies (1-r)^k \to 0$ for $k \to \infty$
         
         Since $(0, 1)$ is open, we can find some $r$ s.t.  $\dfrac{x_{n+1}}{x_n} < r < 1$ for all $n > N$. 
-        Then, $\lim x_n - x_{n+1} = \lim x_n(1-\dfrac{x_{n+1}}{x_n}) < \lim x_N (1 - r)^{n-N} = 0$.
+        Then, $\displaystyle\lim_{n \to \infty} x_n - x_{n+1} = \displaystyle\lim_{n\to \infty} x_n(1-\dfrac{x_{n+1}}{x_n}) < \lim x_N (1 - r)^{n-N} = 0$.
 
         Thus, $s_n$ is Cauchy$\implies s_n$ is convergence.
     \end{quote}
 
-
+    \newpage
     \item \begin{enumerate}[(a)]
         \item WLOG, suppose $\lbrace x_n \rbrace$ is positive and monotone increasing.
         
-        Then, $\sigma_{n+1} - \sigma_n = (\dfrac{n}{n+1} S_n + \dfrac{x_{n+1}}{n+1}) - S_n = \dfrac{1}{n+1}S_n + \dfrac{x_{n+1}}{n+1} > 0$.
-        Therefore, $\sigma_n$ is monotone increasing.
+        Then, $\sigma_{n+1} - \sigma_n = (\dfrac{n}{n+1} S_n + \dfrac{x_{n+1}}{n+1}) - S_n = \dfrac{1}{n+1}S_n + \dfrac{x_{n+1}}{n+1} > 0$ for all $n$.
+        Therefore, $\sigma_n$ is monotone.
 
-        \item 
+        \item Suppose $\lbrace c_1, c_2, \cdots c_k\rbrace$ are cluster points of $\lbrace x_n \rbrace$.
+        
+        Then, $\limsup \sigma_n \leq \max\lbrace c_i\rbrace = \limsup x_n$.
     \end{enumerate}
 \end{enumerate}
 \end{document}
