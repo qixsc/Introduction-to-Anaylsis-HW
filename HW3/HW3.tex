@@ -81,12 +81,29 @@
 
     \newpage
     \item \begin{enumerate}[(a)]
-        \item WLOG, suppose $\lbrace x_n \rbrace$ is positive and monotone increasing.
+        \item WLOG, suppose $\lbrace x_n \rbrace$ is monotone increasing.
         
-        Then, $\sigma_{n+1} - \sigma_n = (\dfrac{n}{n+1} S_n + \dfrac{x_{n+1}}{n+1}) - S_n = \dfrac{1}{n+1}S_n + \dfrac{x_{n+1}}{n+1} > 0$ for all $n$.
+        Then, $\sigma_{n+1} - \sigma_n = (\dfrac{n}{n+1} S_n + \dfrac{x_{n+1}}{n+1}) - S_n = \dfrac{x_{n+1}}{n+1} - \dfrac{S_n}{n+1} > \dfrac{x_{n+1}-x_n}{n+1} > 0$ for all $n$.
         Therefore, $\sigma_n$ is monotone.
 
-        \item Suppose $\lbrace c_1, c_2, \cdots c_k\rbrace$ are cluster points of $\lbrace x_n \rbrace$.
+        \item we divided this question into $\lbrace x_n\rbrace$ diverges or bdd.
+        
+        \begin{enumerate}
+            \item[(diverges)] WLOG, suppose $\limsup x_n = \infty$, then for any $M\in \mathbb{N}$, exists $N \in \mathbb{N}$ s.t. $x_n > M$ for $n \geq N$.
+            
+            Thus, there exists $M_1, N_1 \in \mathbb{N}$ s.t. $x_n \geq M_1$ for all $n \geq N_1$ and $\sigma_{N_1} > \dfrac{M\times N_1}{N_1} = M$.
+
+            which means for any $M \in \mathbb{N}$, there exists some $N_1 \in \mathbb{N}$ s.t. $\sigma_n > M$ for all $n \geq N_1$.
+
+            That means, $\lim \sigma_n = \lim x_n = \infty$.
+
+            The case of diverging to $-\infty$ is the same.
+
+            \item[(bounded)] First, we how it works in a subsequence converging to a cluster point.
+            
+            Let $\lbrace x_{n_k}\rbrace$ be a sequence converge to $a$ and $\mu_{k} = \dfrac{x_{n_1} + x_{n_2} + \cdots + x_{n_k}}{k}$, then for $\epsilon > 0$, there exists $N\in \mathbb{N}$ s.t. $|x_{n_k} - a| < \epsilon$ for all $k > N$.
+            Thus, there exists some $\epsilon_1, N_1\in \mathbb{N}$ s.t. $|\mu_k - a| \leq \dfrac{|x_{n_1} - a| + \cdots + |x_{n_k} - a|}{k}$
+        \end{enumerate}
         
         Then, $\limsup \sigma_n \leq \max\lbrace c_i\rbrace = \limsup x_n$.
     \end{enumerate}
