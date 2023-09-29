@@ -102,10 +102,15 @@
             \item[(bounded)] First, we how it works in a subsequence converging to a cluster point.
             
             Let $\lbrace x_{n_k}\rbrace$ be a sequence converge to $a$ and $\mu_{k} = \dfrac{x_{n_1} + x_{n_2} + \cdots + x_{n_k}}{k}$, then for $\epsilon > 0$, there exists $N\in \mathbb{N}$ s.t. $|x_{n_k} - a| < \epsilon$ for all $k > N$.
-            Thus, there exists some $\epsilon_1, N_1\in \mathbb{N}$ s.t. $|\mu_k - a| \leq \dfrac{|x_{n_1} - a| + \cdots + |x_{n_k} - a|}{k}$
+            Thus, there exists some $\epsilon_1< \epsilon, N_1\in \mathbb{N}$ s.t. $|\mu_k - a| \leq \dfrac{|x_{n_1} - a| + \cdots + |x_{n_k} - a|}{k} < \dfrac{N\times \mu_N + \epsilon_1\times (k-N)}{k} < \epsilon$.
+            Which means $\mu_k$ converge to $a$.
+
+            And since $\dfrac{n_1 a_1 + n_2 a_2 + \cdots + n_k a_k}{n_1 + \cdots + n_k} < \displaystyle\max_{i\in [1, k]}(a_i)$ for all $n_i, k\in \mathbb{N}$ and $a_i \in \mathbb{R}$.
+
+            Thus, if there are cluster points of $\lbrace x_n\rbrace$ named as $a_1, a_2, \cdots a_k$, we can say that $\limsup \sigma_n \leq \max a_n = \limsup x_n$.
         \end{enumerate}
         
-        Then, $\limsup \sigma_n \leq \max\lbrace c_i\rbrace = \limsup x_n$.
+        Then, $\limsup \sigma_n \leq \limsup x_n$ for all cases.
     \end{enumerate}
 \end{enumerate}
 \end{document}
