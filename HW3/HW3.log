@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.9.11)  30 SEP 2023 18:05
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.9.11)  30 SEP 2023 18:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -269,32 +269,39 @@ Package: multicol 2023/03/30 v1.9f multicolumn formatting (FMi)
 ) (C:\Users\9ryan\AppData\Local\Programs\MiKTeX\tex/latex/tools\enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks33
+) (C:\Users\9ryan\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count278
+\float@exts=\toks34
+\float@box=\box102
+\@float@everytoks=\toks35
+\@floatcapt=\box103
 ) (C:\Users\9ryan\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty (C:\Users\9ryan\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty (C:\Users\9ryan\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2023-06-16 L3 programming layer (loader) 
  (C:\Users\9ryan\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xetex.def
 File: l3backend-xetex.def 2023-04-19 L3 backend support: XeTeX
-\g__graphics_track_int=\count278
-\l__pdf_internal_box=\box102
-\g__pdf_backend_object_int=\count279
-\g__pdf_backend_annotation_int=\count280
-\g__pdf_backend_link_int=\count281
+\g__graphics_track_int=\count279
+\l__pdf_internal_box=\box104
+\g__pdf_backend_object_int=\count280
+\g__pdf_backend_annotation_int=\count281
+\g__pdf_backend_link_int=\count282
 ))
 Package: xparse 2023-02-02 L3 Experimental document command parser
 )
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
  (C:\Users\9ryan\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xetex.sty
 Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count282
-\l__fontspec_language_int=\count283
-\l__fontspec_strnum_int=\count284
-\l__fontspec_tmp_int=\count285
-\l__fontspec_tmpa_int=\count286
-\l__fontspec_tmpb_int=\count287
-\l__fontspec_tmpc_int=\count288
-\l__fontspec_em_int=\count289
-\l__fontspec_emdef_int=\count290
-\l__fontspec_strong_int=\count291
-\l__fontspec_strongdef_int=\count292
+\l__fontspec_script_int=\count283
+\l__fontspec_language_int=\count284
+\l__fontspec_strnum_int=\count285
+\l__fontspec_tmp_int=\count286
+\l__fontspec_tmpa_int=\count287
+\l__fontspec_tmpb_int=\count288
+\l__fontspec_tmpc_int=\count289
+\l__fontspec_em_int=\count290
+\l__fontspec_emdef_int=\count291
+\l__fontspec_strong_int=\count292
+\l__fontspec_strongdef_int=\count293
 \l__fontspec_tmpa_dim=\dimen169
 \l__fontspec_tmpb_dim=\dimen170
 \l__fontspec_tmpc_dim=\dimen171
@@ -307,17 +314,17 @@ Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
 ) (C:\Users\9ryan\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xtemplate\xtemplate.sty
 Package: xtemplate 2023-02-02 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen172
-\l__xtemplate_tmp_int=\count293
+\l__xtemplate_tmp_int=\count294
 \l__xtemplate_tmp_muskip=\muskip17
 \l__xtemplate_tmp_skip=\skip59
 )
-\l__xeCJK_tmp_int=\count294
-\l__xeCJK_tmp_box=\box103
+\l__xeCJK_tmp_int=\count295
+\l__xeCJK_tmp_box=\box105
 \l__xeCJK_tmp_dim=\dimen173
 \l__xeCJK_tmp_skip=\skip60
-\g__xeCJK_space_factor_int=\count295
-\l__xeCJK_begin_int=\count296
-\l__xeCJK_end_int=\count297
+\g__xeCJK_space_factor_int=\count296
+\l__xeCJK_begin_int=\count297
+\l__xeCJK_end_int=\count298
 \c__xeCJK_CJK_class_int=\XeTeXcharclass1
 \c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
 \c__xeCJK_FullRight_class_int=\XeTeXcharclass3
@@ -327,8 +334,8 @@ Package: xtemplate 2023-02-02 L3 Experimental prototype document functions
 \c__xeCJK_CM_class_int=\XeTeXcharclass7
 \c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
 \l__xeCJK_last_skip=\skip61
-\c__xeCJK_none_node=\count298
-\g__xeCJK_node_int=\count299
+\c__xeCJK_none_node=\count299
+\g__xeCJK_node_int=\count300
 \c__xeCJK_CJK_node_dim=\dimen174
 \c__xeCJK_CJK-space_node_dim=\dimen175
 \c__xeCJK_default_node_dim=\dimen176
@@ -338,11 +345,11 @@ Package: xtemplate 2023-02-02 L3 Experimental prototype document functions
 \l__xeCJK_ccglue_skip=\skip63
 \l__xeCJK_ecglue_skip=\skip64
 \l__xeCJK_punct_kern_skip=\skip65
-\l__xeCJK_indent_box=\box104
-\l__xeCJK_last_penalty_int=\count300
+\l__xeCJK_indent_box=\box106
+\l__xeCJK_last_penalty_int=\count301
 \l__xeCJK_last_bound_dim=\dimen179
 \l__xeCJK_last_kern_dim=\dimen180
-\l__xeCJK_widow_penalty_int=\count301
+\l__xeCJK_widow_penalty_int=\count302
 
 Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 (xtemplate)             argument(s) on line 2396.
@@ -366,10 +373,10 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \l__xeCJK_margin_dim=\dimen197
 \l__xeCJK_minimum_bound_dim=\dimen198
 \l__xeCJK_kerning_margin_dim=\dimen199
-\g__xeCJK_family_int=\count302
-\l__xeCJK_fam_int=\count303
-\g__xeCJK_fam_allocation_int=\count304
-\l__xeCJK_verb_case_int=\count305
+\g__xeCJK_family_int=\count303
+\l__xeCJK_fam_int=\count304
+\g__xeCJK_fam_allocation_int=\count305
+\l__xeCJK_verb_case_int=\count306
 \l__xeCJK_verb_exspace_skip=\skip66
  (C:\Users\9ryan\AppData\Local\Programs\MiKTeX\tex/xelatex/xecjk\xeCJK.cfg
 File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
@@ -487,10 +494,10 @@ L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7043 strings out of 411164
- 181256 string characters out of 5809999
+ 7112 strings out of 411164
+ 182235 string characters out of 5809999
  1860394 words of memory out of 5000000
- 27504 multiletter control sequences out of 15000+600000
+ 27570 multiletter control sequences out of 15000+600000
  532927 words of font info for 106 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  79i,6n,93p,325b,338s stack positions out of 10000i,1000n,20000p,200000b,200000s
