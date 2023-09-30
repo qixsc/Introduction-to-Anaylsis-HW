@@ -63,7 +63,7 @@
         Thus, $d_2$ is a metric.
     \end{enumerate}
 
-    \item We want to prove $s_{n+1} - s_n < \epsilon$ for all $\epsilon > 0$ which means $x_n \to 0$.
+    \item We want to prove $s_{n+1} - s_n < \epsilon$ for all $\epsilon > 0$, which is equivalent to $x_n \to 0$.
     \begin{quote}
         Since $\displaystyle\limsup_{n \to \infty} \dfrac{x_{n+1}}{x_n} < 1$, 
         there exists some $N\in \mathbb{N}$ s.t. $\dfrac{x_{n+1}}{x_n} < 1$ for all $n > N$.
@@ -71,10 +71,10 @@
         Thus, $\lbrace x_n\rbrace_{n = N}^\infty$ is a monotone decreasing sequence bounded below by $0$.
 
         For any $r < 1$, $\dfrac{1}{r} > 1$ and there exists some $k \in \mathbb{N}$ s.t. $(\dfrac{1}{r})^k > n$ for all $n\in \mathbb{N}$,
-        then $r^k < \dfrac{1}{n}$. Therefore, $1-r < 1\implies (1-r)^k \to 0$ for $k \to \infty$
+        then $r^k < \dfrac{1}{n}$. 
         
         Since $(0, 1)$ is open, we can find some $r$ s.t.  $\dfrac{x_{n+1}}{x_n} < r < 1$ for all $n > N$. 
-        Then, $\displaystyle\lim_{n\to \infty} x_n < \displaystyle\lim_{n\to\infty} x_1\times(1 - r)^{n-1} = x_1 \times 0 = 0$.
+        Then, $\displaystyle\lim_{n\to \infty} x_n < \displaystyle\lim_{n\to\infty} x_1\times r^{n-1} = x_1 \times 0 = 0$.
 
         Thus, $x_n \to 0$ when $n \to \infty$.
     \end{quote}
@@ -105,7 +105,7 @@
 
             The case of diverging to $-\infty$ is the same.
 
-            \item[(bounded)] First, we how it works in a subsequence converging to a cluster point.
+            \item[(bounded)] First, we show it works in a subsequence converging to a cluster point.
             
             Let $\lbrace x_{n_k}\rbrace$ be a sequence converge to $a$ and $\mu_{k} = \dfrac{x_{n_1} + x_{n_2} + \cdots + x_{n_k}}{k}$, then for $\epsilon > 0$, there exists $N\in \mathbb{N}$ s.t. $|x_{n_k} - a| < \epsilon$ for all $k > N$.
             Thus, there exists some $\epsilon_1< \epsilon, N_1\in \mathbb{N}$ s.t. $|\mu_k - a| \leq \dfrac{|x_{n_1} - a| + \cdots + |x_{n_k} - a|}{k} < \dfrac{N\times \mu_N + \epsilon_1\times (k-N)}{k} < \epsilon$.
