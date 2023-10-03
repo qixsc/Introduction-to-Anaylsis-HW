@@ -2,9 +2,10 @@
 
 \topmargin -40pt
 \marginparwidth 0pt
- \oddsidemargin  -40pt
- \evensidemargin 0pt
- \marginparsep 0pt
+\oddsidemargin  -40pt
+\evensidemargin 0pt
+\marginparsep 0pt
+\linespread{1.5}
 \textwidth 7.2 in
  \textheight  10 in
  \hoffset  0.1in
@@ -37,7 +38,13 @@
     then for any point $x \in A$, exists some $\epsilon > 0$ s.t. $B(x, \epsilon) \subset A$.
 
     \item\begin{enumerate}
-        \item no, if $U = \lbrace x \rbrace$ is the only neighborhood of $x$, there isnot a point $p\in U,\ p\neq x$ s.t. $p\in A$.
+        \item\begin{enumerate}
+            \item $x$ is an accumulation point, for all $\epsilon > 0$, $D(x, \epsilon)/\lbrace x \rbrace \cap A \neq \emptyset\implies D(x, \epsilon) \cap A \neq \emptyset$.
+            Thus, $x$ is a limit point.
+            \item Let $M = \mathbb{R}, d(x, y) = |x-y|,\ A = \lbrace n \mid n \in \mathbb{N}\rbrace$, then $1$ is a limit point of $A$ since $B(0, \epsilon) \cap A \neq \emptyset$ for all $\epsilon > 0$.
+            
+            But for $0 < \epsilon < 1$, $B(1, \epsilon)/\lbrace 1 \rbrace \cap A = \emptyset$. Thus, limit point is not accumulation all the time.
+        \end{enumerate}
         \item Assume there exists a limit point $x$ of $A$ is not in $A$.
         Then, $x \in A^c$. We want to show that $A$ is not close.
         \begin{quote}
@@ -47,6 +54,7 @@
 
         Therefore, if $A$ is close, $A$ contains all its limit points.
     \end{enumerate}
+    \newpage
 
     \item \begin{enumerate}
         \item For $x \in \bar{A}_1 = A_1\cup A_1'$, then we only need to show that the accumulation point $x$ of $A_1\implies \inf\lbrace d(x, y)\mid y \in A_1\rbrace = 0$.
@@ -66,8 +74,8 @@
             This implies that $D(x, \epsilon) \cap (\cup_{i=1}^n A_i) = D(x, \epsilon) \cap B_n \neq \emptyset\implies x \in \bar{B}_n$
         \end{enumerate}
 
-        \item For $x \in \cup_{i=1}^\infty A_i$, $D(x, \epsilon) \cap (\cup_{i=1}^\infty A_i) \neq \emptyset$
-
+        \item Using the same way in (b), we can know that $U_{i=1}^{\infty} A_i \subseteq B$.
+        But the union of close sets may not be close for some time, then the inclusion can be proper. Like $A_i = (\dfrac{1}{I}, 1)$, $\bar{B} = [0, 1]$ and $\cup A_i = (0, 1]$.
     \end{enumerate}
 \end{enumerate}
 \end{document}
