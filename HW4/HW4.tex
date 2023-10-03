@@ -27,14 +27,47 @@
 \XeTeXlinebreaklocale "zh"
 \XeTeXlinebreakskip = 0pt plus 1pt
 
-
-
 \title{Homework 4 of Introduction to Analysis (I), Honor Class}
 \author{AM15 黃琦翔 111652028}
 
 \begin{document}
 \maketitle
 \begin{enumerate}
-    \item Since $A \subseteq \mathbb{R}^n$ is open, 
+    \item Since $A \subseteq \mathbb{R}^n$ is open,
+    then for any point $x \in A$, exists some $\epsilon > 0$ s.t. $B(x, \epsilon) \subset A$.
+
+    \item\begin{enumerate}
+        \item no, if $U = \lbrace x \rbrace$ is the only neighborhood of $x$, there isnot a point $p\in U,\ p\neq x$ s.t. $p\in A$.
+        \item Assume there exists a limit point $x$ of $A$ is not in $A$.
+        Then, $x \in A^c$. We want to show that $A$ is not close.
+        \begin{quote}
+            For $A^c$, since all neighborhood $U$ of $x$ has intersection with $A$, then $U \nsubseteq A^c$. 
+            Thus, $A^c$ is not open.
+        \end{quote}
+
+        Therefore, if $A$ is close, $A$ contains all its limit points.
+    \end{enumerate}
+
+    \item \begin{enumerate}
+        \item For $x \in \bar{A}_1 = A_1\cup A_1'$, then we only need to show that the accumulation point $x$ of $A_1\implies \inf\lbrace d(x, y)\mid y \in A_1\rbrace = 0$.
+        \begin{quote}
+            Assume $\inf\lbrace d(x, y)\mid y \in A_1\rbrace = \alpha > 0$, then $B(x, \epsilon) \cap A_1 = \emptyset$ for $0 < \epsilon < \alpha$.
+            Implies that $x$ is not an accumulation point of $A_1$.
+        \end{quote}
+        Thus, if $x \in \bar{A}_1$, $\inf \lbrace d(x, y) \mid y \in A_1\rbrace = 0$. 
+
+        \item \begin{enumerate}
+            \item[($\subseteq$)] For $x \in B_n$, $D(x, \epsilon) \cap B_n \neq \emptyset$ for all $\epsilon > 0$.
+
+            $D(x, \epsilon) \cap (\cup^{n}_{i=1} A_i) = \cup^{n}_{i=1} (D(x, \epsilon) \cap A_i) \neq \emptyset\implies D(x, \epsilon) \cap A_i\neq \emptyset$ for some $i \in [1, n]$.
+            Thus, $x \in \bar{A}_i$ for any $\epsilon > 0$ and some $i \in [1, n] \implies x \in \cup_{i=1}^n \bar{A}_i$.
+ 
+            \item[($\supseteq$)] For $x \in \cup_{i=1}^n \bar{A}_i$ and $\epsilon > 0$, $D(x, \epsilon) cap \bar{A}_i \neq \emptyset$ for some $i$.
+            This implies that $D(x, \epsilon) \cap (\cup_{i=1}^n A_i) = D(x, \epsilon) \cap B_n \neq \emptyset\implies x \in \bar{B}_n$
+        \end{enumerate}
+
+        \item For $x \in \cup_{i=1}^\infty A_i$, $D(x, \epsilon) \cap (\cup_{i=1}^\infty A_i) \neq \emptyset$
+
+    \end{enumerate}
 \end{enumerate}
 \end{document}
