@@ -105,15 +105,18 @@
 
             The case of diverging to $-\infty$ is the same.
 
-            \item[(bounded)] First, we show it works in a subsequence converging to a cluster point.
+            \item[(bounded)] Since $\lbrace x_n\rbrace$ is bdd, let $\beta = \limsup x_n = \sup\lbrace \beta_i\rbrace$ where $\beta_i$ is cluster point of $x_n$ for all $i$.
             
-            Let $\lbrace x_{n_k}\rbrace$ be a sequence converge to $a$ and $\mu_{k} = \dfrac{x_{n_1} + x_{n_2} + \cdots + x_{n_k}}{k}$, then for $\epsilon > 0$, there exists $N\in \mathbb{N}$ s.t. $|x_{n_k} - a| < \epsilon$ for all $k > N$.
-            Thus, there exists some $\epsilon_1< \epsilon, N_1\in \mathbb{N}$ s.t. $|\mu_k - a| \leq \dfrac{|x_{n_1} - a| + \cdots + |x_{n_k} - a|}{k} < \dfrac{N\times \mu_N + \epsilon_1\times (k-N)}{k} < \epsilon$.
-            Which means $\mu_k$ converge to $a$.
+            Thus, for $\epsilon > 0$, there exists some $N \in \mathbb{N}$ s.t. $x_n < \beta + \epsilon$ for all $n > N$.
 
-            And since $\dfrac{n_1 a_1 + n_2 a_2 + \cdots + n_k a_k}{n_1 + \cdots + n_k} < \displaystyle\max_{i\in [1, k]}(a_i)$ for all $n_i, k\in \mathbb{N}$ and $a_i \in \mathbb{R}$.
+            Then, since the density of $\mathbb{R}$, there exists $\beta < \delta < \beta + \epsilon$.
+            Thus, there exists some $M\in \mathbb{N}$ s.t. $x_n \leq \delta$ for all $n > M$.
 
-            Thus, if there are cluster points of $\lbrace x_n\rbrace$ named as $a_1, a_2, \cdots a_k$, we can say that $\limsup \sigma_n \leq \max a_n = \limsup x_n$.
+            Therefore, $\sigma_n = \dfrac{x_1 + x_2 + \cdots + x_n}{n} < \dfrac{x_1 + x_2 + \cdots + x_M}{n} + \dfrac{\delta(n-M)}{n}\\
+             = \delta \cdot \dfrac{1}{n}(x_1 + x_2 + \cdots + x_M - M)$.
+            By Archimedean properity, there exists some $N' \in \mathbb{N}$ s.t. $\dfrac{1}{n}(x_1 + x_2 + \cdots + x_M - M) < \beta + \epsilon - \delta$ for $n > N'$.
+            Thus, $\sigma < \beta + \epsilon$ for all $\epsilon > 0$ and some $N'\in \mathbb{N}$, which is equivalent to $\limsup \sigma_n \leq \beta = \limsup x_n$.
+
         \end{enumerate}
         
         Then, $\limsup \sigma_n \leq \limsup x_n$ for all cases.
