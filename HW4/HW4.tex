@@ -61,10 +61,12 @@
         Then, let $y \in (D(x, \epsilon)/\lbrace x \rbrace) \cap A_1$, $d(x, y) < \epsilon$ for all $\epsilon > 0\implies \inf\lbrace d(x, y) \mid y \in A_1\rbrace = 0$.
 
         \item \begin{enumerate}
-            \item[($\subseteq$)] For $x in B_n'$, for any $\epsilon > 0$, $(D(x, \epsilon) / \lbrace x \rbrace) \cap B_n = (D(x, \epsilon) / \lbrace x \rbrace) \cap (\cup A_i) = \cup((D(x, \epsilon) / \lbrace x \rbrace) \cap A_i) \neq \emptyset$.
+            \item[($\subseteq$)] For $x \in B_n'$, for any $\epsilon > 0$, $(D(x, \epsilon) / \lbrace x \rbrace) \cap B_n = (D(x, \epsilon) / \lbrace x \rbrace) \cap (\cup A_i) \\
+            = \cup((D(x, \epsilon) / \lbrace x \rbrace) \cap A_i) \neq \emptyset$.
             Thus, $(D(x, \epsilon) / \lbrace x \rbrace) \cap A_i\neq \emptyset$ for some $i\implies x \in \cup A_i'$.
             
-            \item[($\supseteq$)] If $x \in A_i'$, for any $\epsilon > 0$, $(D(x, \epsilon)/\lbrace x \rbrace) \cap A_i \neq \emptyset\implies \emptyset \neq (D(x, \epsilon) / \lbrace x \rbrace) \cap (\cup A_i) = (D(x, \epsilon) / \lbrace x \rbrace) \cap B_n$.
+            \item[($\supseteq$)] If $x \in A_i'$, for any $\epsilon > 0$, $(D(x, \epsilon)/\lbrace x \rbrace) \cap A_i \neq \emptyset\implies \emptyset \neq (D(x, \epsilon) / \lbrace x \rbrace) \cap (\cup A_i) \\
+            = (D(x, \epsilon) / \lbrace x \rbrace) \cap B_n$.
         \end{enumerate}
 
         Thus, $B_n' = \cup A_i'$.
