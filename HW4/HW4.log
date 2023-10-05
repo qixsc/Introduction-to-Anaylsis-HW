@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.9.11)  3 OCT 2023 20:55
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.9.11)  5 OCT 2023 14:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -487,7 +487,12 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
  [1
 
-] [2] (HW4.aux)
+]
+Overfull \hbox (14.53392pt too wide) in paragraph at lines 67--68
+[]\TU/TimesNewRoman(0)/m/n/12 If $\OML/ztmcm/m/it/12 x \OMS/ztmcm/m/n/12 2 \OML/ztmcm/m/it/12 A[]$\TU/TimesNewRoman(0)/m/n/12 , for any $\OML/ztmcm/m/it/12 ^^O > \OT1/ztmcm/m/n/12 0$\TU/TimesNewRoman(0)/m/n/12 , $\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 D\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 x; ^^O\OT1/ztmcm/m/n/12 )\OML/ztmcm/m/it/12 =\OMS/ztmcm/m/n/12 f\OML/ztmcm/m/it/12 x\OMS/ztmcm/m/n/12 g\OT1/ztmcm/m/n/12 ) \OMS/ztmcm/m/n/12 \ \OML/ztmcm/m/it/12 A[] \OMS/ztmcm/m/n/12 6\OT1/ztmcm/m/n/12 = \OMS/ztmcm/m/n/12 ;  \OT1/ztmcm/m/n/12 =[]\OMS/ztmcm/m/n/12 )  ; 6\OT1/ztmcm/m/n/12 = (\OML/ztmcm/m/it/12 D\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 x; ^^O\OT1/ztmcm/m/n/12 )\OML/ztmcm/m/it/12 =\OMS/ztmcm/m/n/12 f\OML/ztmcm/m/it/12 x\OMS/ztmcm/m/n/12 g\OT1/ztmcm/m/n/12 ) \OMS/ztmcm/m/n/12 \ \OT1/ztmcm/m/n/12 (\OMS/ztmcm/m/n/12 [\OML/ztmcm/m/it/12 A[]\OT1/ztmcm/m/n/12 ) = (\OML/ztmcm/m/it/12 D\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 x; ^^O\OT1/ztmcm/m/n/12 )\OML/ztmcm/m/it/12 =\OMS/ztmcm/m/n/12 f\OML/ztmcm/m/it/12 x\OMS/ztmcm/m/n/12 g\OT1/ztmcm/m/n/12 ) \OMS/ztmcm/m/n/12 \
+ []
+
+[2] (HW4.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -496,10 +501,10 @@ L3 programming layer <2022/08/05>
 Here is how much of TeX's memory you used:
  7112 strings out of 411164
  182235 string characters out of 5809999
- 1853394 words of memory out of 5000000
+ 1852394 words of memory out of 5000000
  27570 multiletter control sequences out of 15000+600000
  532927 words of font info for 106 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,6n,93p,290b,269s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,6n,93p,344b,265s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on HW4.xdv (2 pages, 13452 bytes).
+Output written on HW4.xdv (2 pages, 10600 bytes).
