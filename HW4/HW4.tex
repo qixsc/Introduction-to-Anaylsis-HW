@@ -34,8 +34,14 @@
 \begin{document}
 \maketitle
 \begin{enumerate}
-    \item Since $A \subseteq \mathbb{R}^n$ is open,
-    then for any point $x \in A$, exists some $\epsilon > 0$ s.t. $B(x, \epsilon) \subset A$.
+    \item Let $B = A \cap \mathbb{Q}^n$.
+    Then, for any $p \in B$, we can find a $\epsilon\in \mathbb{Q} > 0$ s.t. $D(p, \epsilon) \subseteq B$.
+    Since $\mathbb{Q}$ is countable, the number of open balls contains any points in $B$ is isomorphic to $\mathbb{Q}^n \oplus \mathbb{Q}$, which is also countable.
+    Thus, we want to proof the union of the collection of open balls contains any points in $A$.
+
+    For any $x \in A$, since $A$ is open, exists $\epsilon > 0$ s.t. $D(x, \epsilon) \subseteq A$. Taking $p \in D(x, \epsilon) \cap \mathbb{Q}^n$ with $d(p, x) < \dfrac{\epsilon}{2}$.
+    Then, $D(p, \dfrac{\epsilon}{2})$ contains $x\implies$ every points in $A$ is contained in a open ball in $B$.
+    Therefore, any $A \subseteq \mathbb{R}^n$, $A$ is union of a countable collection of open balls.
 
     \item\begin{enumerate}
         \item\begin{enumerate}
