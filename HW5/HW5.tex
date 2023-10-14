@@ -5,7 +5,7 @@
 \oddsidemargin  -40pt
 \evensidemargin 0pt
 \marginparsep 0pt
-\linespread{1.5}
+\linespread{1.9}
 \textwidth 7.2 in
  \textheight  10 in
  \hoffset  0.1in
@@ -34,21 +34,40 @@
 \begin{document}
 \maketitle
 \begin{enumerate}
-    \item 
+    \item First we want to show given $\epsilon > 0$, we can find finite sequence $x_1, x_2, \cdots x_n$ s.t. $\cup D(x_i, \epsilon) = X$.
+    \begin{quote}
+        Proving this by contrapositive way.
 
-    \item Let $U$ be any non-empty open set $\in \mathbb{R}$.
+        Let $y_1$ be a point in $X$, then $D(y_1, \epsilon)$ can not cover $X$.
+        Then, we can find $y_2\in X-D(y_1, \epsilon)$ s.t. $D(y_1, \epsilon) \cup D(y_2, \epsilon)$ can not cover $X$.
+
+        Using the same way, we can find $y_m$ s.t. $\cup D(y_i, \epsilon)$ does not cover $X$. Which means distance of $y_i$ are greateer than $\epsilon$.
+        This, is contradiction to the infinite set in $X$ has a accumulation points.
+    \end{quote} 
+
+    Thus, we can find finite set $\lbrace x_{i, n}\rbrace_{i=1}^{m_i}$ s.t. $\lbrace D(x_{i, n}, \dfrac{1}{n})\rbrace_{i=0}^{m_n}$ cover $X$.
+    Then, $\lbrace x_{i, n}\rbrace_{1\leq n\leq \infty,\ 1\leq i\leq m_n}$ is countable.
+
+    Then, we want to show $S= \cup D(x_{i, n}, \dfrac{1}{n})$ is dense in $X$.
+
+    For any $x\in X-S$, then for all $\epsilon > 0$, exists $\dfrac{1}{n_i} \leq \epsilon$ s.t. $D(x, \dfrac{1}{n_i})\subseteq D(x, \epsilon)$ and
+    $x \in D(x_{i, n}, \dfrac{1}{n_i})$ for some $1\leq i \leq m_i\implies x$ is a accumulation point of $S$. Then, $\bar{S} = X\implies S$ is dense.
+
+
+    \item For any $U$ be any disjoint non-empty open set $\in \mathbb{R}$.
     Since $U$ is open, $U$ contains rational numbers.
     Then, for every $U$, we call it $U_x$, for a $x\in \mathbb{Q} \cap U$.
-    Thus, we can number the open sets by $\mathbb{Q}$ which is countable.
+    Thus, we can label the open sets by $\mathbb{Q}$ which is countable.
 
-    \item For $x \in A$, since $\cap_{n=1}^{\infty} A_n = \emptyset$, $A = \cap_{n=1}^{\infty} \bar{A}_n = (\cap_{n=1}^{\infty} A_n) \cup (\cap_{n=1}^{\infty} A_n') = \cap_{n=1}^{\infty} A_n'$.
+    \newpage
+    \item Since $A_1 \supseteq A_2\supseteq \cdots A_n$, $A_1' \supseteq A_2'\supseteq \cdots A_n'$.
+    
+    For $x \in A$, since $\cap_{n=1}^{\infty} A_n = \emptyset$, $A = \cap_{n=1}^{\infty} \bar{A}_n = (A_1\cup A_1') \cap (\cap_{n=2}^{\infty} \bar{A}_n)\\
+    = (A_1' \cap (\cap_{n=2}^{\infty} \bar{A}_n)) \cup (A \cap (\cap_{n=2}^{\infty} \bar{A}_n)) = (\cap_{i=1}^{\infty} A_i') \cup (\cap_{i=2}^{\infty} A_i') \cup \cdots = \cap_{n=1}^{\infty} A_n'$.
     
     Thus, $x \in A_1'$.
-
     \item First, we want to proof $\overline{M-A} \supseteq (\overline{A} - A)$.
-    \begin{quote}
-        Since $\overline{M-A} = (M-A)' \cup (M-A)$ and $\overline{A} \subseteq M\implies (\overline{A} - A) \subseteq (M - A) \subseteq \overline{M-A}$.
-    \end{quote}
+    Since $\overline{M-A} = (M-A)' \cup (M-A)$ and $\overline{A} \subseteq M\implies (\overline{A} - A) \subseteq (M - A) \subseteq \overline{M-A}$.
     
     $(A \cap \overline{M-A}) \cup (\overline{A} - A) = (A\cup (\overline{A}-A)) \cap (\overline{M-A} \cup (\overline{A} - A)) = \overline{A} \cap (\overline{M-A}) = \partial A$ 
 \end{enumerate}
