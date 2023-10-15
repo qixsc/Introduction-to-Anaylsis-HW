@@ -41,7 +41,7 @@
         Let $y_1$ be a point in $X$, then $D(y_1, \epsilon)$ can not cover $X$.
         Then, we can find $y_2\in X-D(y_1, \epsilon)$ s.t. $D(y_1, \epsilon) \cup D(y_2, \epsilon)$ can not cover $X$.
 
-        Using the same way, we can find $y_m$ s.t. $\cup D(y_i, \epsilon)$ does not cover $X$. Which means distance of $y_i$ are greateer than $\epsilon$.
+        Using the same way, if we cann't find $m \in \mathbb{N}$ s.t. $\cup D(y_i, \epsilon)$ does not cover $X$. Which means distance of $y_i$ are greateer than $\epsilon$.
         This, is contradiction to the infinite set in $X$ has a accumulation points.
     \end{quote} 
 
@@ -54,9 +54,10 @@
     $x \in D(x_{i, n}, \dfrac{1}{n_i})$ for some $1\leq i \leq m_i\implies x$ is a accumulation point of $S$. Then, $\bar{S} = X\implies S$ is dense.
 
 
-    \item For any $U$ be any disjoint non-empty open set $\in \mathbb{R}$.
-    Since $U$ is open, $U$ contains rational numbers.
-    Then, for every $U$, we call it $U_x$, for a $x\in \mathbb{Q} \cap U$.
+    \item Since we can find collection of open sets covers open set $U\subseteq \mathbb{R}$.
+    For $\lbrace U'\rbrace$ be disjoint non-empty open sets covers $U$.
+    Since $U'$ is open, $U'$ contains rational numbers.
+    Then, for every $U'$, we call it $U'_x$, for a $x\in \mathbb{Q} \cap U'$.
     Thus, we can label the open sets by $\mathbb{Q}$ which is countable.
 
     \newpage
