@@ -54,17 +54,17 @@
     $x \in D(x_{i, n}, \dfrac{1}{n_i})$ for some $1\leq i \leq m_i\implies x$ is a accumulation point of $S$. Then, $\bar{S} = X\implies S$ is dense.
 
 
-    \item Since we can find collection of open sets covers open set $U\subseteq \mathbb{R}$.
-    For $\lbrace U'\rbrace$ be disjoint non-empty open sets covers $U$.
-    Since $U'$ is open, $U'$ contains rational numbers.
-    Then, for every $U'$, we call it $U'_x$, for a $x\in \mathbb{Q} \cap U'$.
-    Thus, we can label the open sets by $\mathbb{Q}$ which is countable.
+    \item First, we let $\lbrace U\rbrace$ be disjoint segments that covers the open set in $\mathbb{R}$.
+    Let $x\sim y$ if $[x, y]\subseteq U$ with $x\leq y$ or $[y, x] \subseteq U$ with $y\leq x$.
+    Then, if $x, y \in U$ with $x\neq y$, since exists $q \in [x, y]\cap \mathbb{Q}$, $q \in U\cap \mathbb{Q}$.
+    Then, for every $U$ contains more than one number, we call it $U_x$, for a $x\in \mathbb{Q} \cap U$, which $\lbrace U_x \rbrace$ is countable.
+
 
     \newpage
     \item Since $A_1 \supseteq A_2\supseteq \cdots A_n$, $A_1' \supseteq A_2'\supseteq \cdots A_n'$.
     
-    For $x \in A$, since $\cap_{n=1}^{\infty} A_n = \emptyset$, $A = \cap_{n=1}^{\infty} \bar{A}_n = (A_1\cup A_1') \cap (\cap_{n=2}^{\infty} \bar{A}_n)\\
-    = (A_1' \cap (\cap_{n=2}^{\infty} \bar{A}_n)) \cup (A \cap (\cap_{n=2}^{\infty} \bar{A}_n)) = (\cap_{i=1}^{\infty} A_i') \cup (\cap_{i=2}^{\infty} A_i') \cup \cdots = \cap_{n=1}^{\infty} A_n'$.
+    For $x \in A$, since $\displaystyle\bigcap_{n=1}^{\infty} A_n = \emptyset$, $A = \cap_{n=1}^{\infty} \bar{A}_n = (A_1\cup A_1') \cap (\displaystyle\bigcap_{n=2}^{\infty} \bar{A}_n)\\
+    = (A_1' \cap (\displaystyle\bigcap_{n=2}^{\infty} \bar{A}_n)) \cup (A \cap (\displaystyle\bigcap_{n=2}^{\infty} \bar{A}_n)) = \cdots = (\displaystyle\bigcap_{i=1}^{\infty} A_i') \cup (\displaystyle\bigcap_{i=2}^{\infty} A_i') \cup \cdots = \displaystyle\bigcap_{n=1}^{\infty} A_n'$.
     
     Thus, $x \in A_1'$.
     \item First, we want to proof $\overline{M-A} \supseteq (\overline{A} - A)$.
