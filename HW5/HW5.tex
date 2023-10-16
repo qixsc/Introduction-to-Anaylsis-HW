@@ -36,19 +36,18 @@
 \begin{enumerate}
     \item First we want to show given $\epsilon > 0$, we can find finite sequence $x_1, x_2, \cdots x_n$ s.t. $\cup D(x_i, \epsilon) = X$.
     \begin{quote}
-        Proving this by contrapositive way.
-
         Let $y_1$ be a point in $X$, then $D(y_1, \epsilon)$ can not cover $X$.
         Then, we can find $y_2\in X-D(y_1, \epsilon)$ s.t. $D(y_1, \epsilon) \cup D(y_2, \epsilon)$ can not cover $X$.
 
-        Using the same way, if we cann't find $m \in \mathbb{N}$ s.t. $\cup D(y_i, \epsilon)$ does not cover $X$. Which means distance of $y_i$ are greateer than $\epsilon$.
-        This, is contradiction to the infinite set in $X$ has a accumulation points.
+        Using the same way, we can find $m \in \mathbb{N}, m < \infty$ s.t. $\displaystyle\bigcap_{i=1}^m D(y_i, \epsilon) = X$.
+        If we can't, in the other word, we found a infinite sequence $y_n$ s.t. the distance of two element in them is greater than $\epsilon$,
+        which is contradict to the infinite sequence in $X$ has a accumulation point.
     \end{quote} 
 
-    Thus, we can find finite set $\lbrace x_{i, n}\rbrace_{i=1}^{m_i}$ s.t. $\lbrace D(x_{i, n}, \dfrac{1}{n})\rbrace_{i=0}^{m_n}$ cover $X$.
+    Thus, we can find finite set $\lbrace x_{i, n}\rbrace_{i=1}^{m_i}$ s.t. $\displaystyle\bigcup_{i=1}^{m} D(x_{i, n}, \dfrac{1}{n})$ cover $X$.
     Then, $\lbrace x_{i, n}\rbrace_{1\leq n\leq \infty,\ 1\leq i\leq m_n}$ is countable.
 
-    Then, we want to show $S= \cup D(x_{i, n}, \dfrac{1}{n})$ is dense in $X$.
+    Then, we want to show $S = \cup D(x_{i, n}, \dfrac{1}{n})$ is dense in $X$.
 
     For any $x\in X-S$, then for all $\epsilon > 0$, exists $\dfrac{1}{n_i} \leq \epsilon$ s.t. $D(x, \dfrac{1}{n_i})\subseteq D(x, \epsilon)$ and
     $x \in D(x_{i, n}, \dfrac{1}{n_i})$ for some $1\leq i \leq m_i\implies x$ is a accumulation point of $S$. Then, $\bar{S} = X\implies S$ is dense.
