@@ -1,0 +1,59 @@
+\documentclass[12pt]{article}
+
+\topmargin -40pt
+\marginparwidth 0pt
+\oddsidemargin  -40pt
+\evensidemargin 0pt
+\marginparsep 0pt
+\linespread{1.9}
+\textwidth 7.2 in
+ \textheight  10 in
+ \hoffset  0.1in
+
+\usepackage{amsthm,amsmath,amssymb,amscd,verbatim,epsfig}
+\usepackage{mathptmx}
+\usepackage{amsfonts}
+%\usepackage{setapace}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{CJK}
+\usepackage{ulem}
+\usepackage{multicol}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{Times New Roman}
+\setCJKmainfont{TaipeiSansTCBeta-Regular}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+\title{Homework 6 of Introduction to Analysis (I), Honor Class}
+\author{AM15 黃琦翔 111652028}
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+    \item First, we show that $S$ is closed and bounded. There exists $D(2, 2) \subseteq S\implies S$ is bounded.
+    And for $x\in \mathbb{Q}\setminus S$, if $x\leq \sqrt{2}$, $D(x, d(x, \sqrt{2}))\subseteq \mathbb{Q}\setminus S$. If $x\geq \pi$, $D(x, \pi) \subseteq \mathbb{Q}\setminus S\implies \mathbb{Q}\setminus S$ is open.
+    Then, $S$ is closed.
+
+    $G_i = (\sqrt{2} - \dfrac{1}{n}, \pi - \dfrac{1}{n}) \cap \mathbb{Q}$, then $\displaystyle\bigcap_{i=1}^{\infty} G_i$ is an open cover of $S$ but doesn't have finite subcover.
+    Thus, $S$ is not compact.
+
+    \item $\displaystyle\bigcap_{n=1}^{\infty} V_n = \emptyset$.
+    
+    \item Since $x, y\in K$, then assume there doesn't exists a set in $G$ s.t. it contains both of $x, y$, then $G$ doesn't contain one of $x, y$ or both neither.
+    Thus, $G$ doesn't cover $K$ , contradict to $G$ is a open cover. Thus, there exists a set in $G$ containing both $x, y$.
+
+    \item Since $A$ is totally bounded, for all $\epsilon > 0$, exists $\lbrace x_i\rbrace_{i=1}^N$ is a finite set s.t. $A \subseteq \displaystyle\bigcup_{i=1}^N D(x_i, \epsilon)$.
+    
+    And $M$ is conplete$\implies$ every Cauchy sequence in $M$ converge to a point in $M$.
+
+    Then, for any sequence $\lbrace y_i\rbrace$ in $\bar{A}$, if there is not any subsequence converge to $\bar{A}$, there exists $\epsilon' > 0$ s.t. $|y_m-y_n| > \epsilon'$ for all $m, n > N\in \mathbb{N}$.
+    $\cup D(y_i, \epsilon')$ will be a infinite open cover of $A$, which contradicts to there has a finite $N$ s.t. $\cup D(x_i, \epsilon')$ is cover of $A$.
+
+    Thus, every sequence in $\bar{A}$ have subsequence converge to a point in $\bar{A}\implies \bar{A}$ is sequence compact.
+    Then, by BWT, $\bar{A}$ is compact.
+\end{enumerate}
+\end{document}
