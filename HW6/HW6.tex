@@ -46,16 +46,22 @@
     Thus, $S$ is not compact.
 
     \item Assume $\displaystyle\bigcap_{n=1}^{\infty} V_n = \emptyset$.
-    
     And since $\interior(V_n) \subseteq V_n \subseteq \closure(V_n) \subseteq V_{n-1}$, $V_n \subseteq V_{n-1}$.
     Then, $\displaystyle\bigcap_{n=1}^{k} V_n = V_k$.
 
-    Since $\closure(V_n)$ is compact, 
+    Take open set $C_i \supseteq (V_i)^c$. \
+    Since $\cap V_i = \emptyset$, $\displaystyle\bigcup_{i=1}^{\infty} C_i$ is an open cover of $V_n$ for all $n$.
+    That is, $\displaystyle\bigcup_{i=1}^{\infty} C_i$ is a open cover of $\closure(V_n)$ for all $n$.
 
-    
+    Since $\closure(V_1)$ is compact, there exists $n' \in \mathbb{N}$ s.t. $\displaystyle\bigcup_{i=1}^{n'} C_i$ is finite subcover of $\closure(V_1)$.
+    That implies $V_{n} = \emptyset$, contradict to $V_i$ are non-empty for all $i$.
+
+    Thus, $\displaystyle\bigcap_{n=1}^{\infty} V_n \neq \emptyset$.
+
     \item Since $x, y\in K$, then assume there doesn't exists a set in $G$ s.t. it contains both of $x, y$, then $G$ doesn't contain one of $x, y$ or both neither.
     Thus, $G$ doesn't cover $K$ , contradict to $G$ is a open cover. Thus, there exists a set in $G$ containing both $x, y$.
 
+    \newpage
     \item Since $A$ is totally bounded, for all $\epsilon > 0$, exists $\lbrace x_i\rbrace_{i=1}^N$ is a finite set s.t. $A \subseteq \displaystyle\bigcup_{i=1}^N D(x_i, \epsilon)$.
     
     And $M$ is conplete$\implies$ every Cauchy sequence in $M$ converge to a point in $M$.
