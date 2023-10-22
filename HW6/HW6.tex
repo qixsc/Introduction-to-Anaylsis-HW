@@ -38,14 +38,12 @@
     And for $x\in \mathbb{Q}\setminus S$, if $x\leq \sqrt{2}$, $D(x, d(x, \sqrt{2}))\subseteq \mathbb{Q}\setminus S$. If $x\geq \pi$, $D(x, \pi) \subseteq \mathbb{Q}\setminus S\implies \mathbb{Q}\setminus S$ is open.
     Then, $S$ is closed.
 
-    $G_i = (\sqrt{2} - \dfrac{1}{n}, \pi - \dfrac{1}{n}) \cap \mathbb{Q}$, then $\displaystyle\bigcap_{i=1}^{\infty} G_i$ is an open cover of $S$ but doesn't have finite subcover.
+    $G_i = (\sqrt{2} - \dfrac{1}{n}, \pi - \dfrac{1}{n}) \cap \mathbb{Q}$, then $\displaystyle\bigcup_{i=1}^{\infty} G_i$ is an open cover of $S$ but doesn't have finite subcover.
     Thus, $S$ is not compact.
 
     \item Assume $\displaystyle\bigcap_{n=1}^{\infty} V_n = \emptyset$.
-    For $\bar{V}_2$, $V_1$ is open and $\bar{V}_2 \subseteq V_1$, then $V_1$ is a open cover of $\bar{V}_2$.
-    Then, since $\bar{V}_2$ is compact, we can find finite $\lbrace y_n \in V_1 \setminus \bar{V}_2\rbrace$ s.t. $\cup D(y_i, \epsilon_i) \cup V_2$ is a open cover of $\bar{V}_2$.
+    
 
-    Using the same way, 
     
     \item Since $x, y\in K$, then assume there doesn't exists a set in $G$ s.t. it contains both of $x, y$, then $G$ doesn't contain one of $x, y$ or both neither.
     Thus, $G$ doesn't cover $K$ , contradict to $G$ is a open cover. Thus, there exists a set in $G$ containing both $x, y$.
