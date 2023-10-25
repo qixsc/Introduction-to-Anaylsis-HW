@@ -38,6 +38,38 @@
 \begin{document}
 \maketitle
 \begin{enumerate}
+    \item First, we show that $\displaystyle\bigcap_{i=1}^{\infty} F_i$ is closed.
+    For $F_k$, we let $V_k = M\setminus F_k$ which is a open set.
+    Then, $M \setminus\displaystyle(\bigcap_{i=1}^{\infty} F_i)= \displaystyle\bigcup_{i=1}^{\infty} V_i = \displaystyle\lim_{i\to \infty} V_i$  is open.
+    Thus, $\displaystyle\bigcap_{i=1}^{\infty} F_i$ is closed.
+
+    Then, assume $\displaystyle\bigcap_{i=1}^{\infty} F_i$ is disconnected. 
+    Thus, we can find two non-empty open sets $U, V$ in $\displaystyle\bigcap_{i=1}^{\infty} F_i$ s.t. $U\cap V = \emptyset$ and $\displaystyle\bigcap_{i=1}^{\infty} F_i = U \cup V$.
+    Since $F_k \subseteq F_{k-1}$, $U, V \subseteq F_k$ for all k.
+
+    And since $F_k$ is connected, $U \cup V \subsetneq F_k$ for all $k$.
+    Then, there exists some $x_{k, i}\in F_k \setminus U \cup V$.
+
+
+    \item  Assume there exists $a \in S$ and $r \geq 0$ s.t. $\lbrace x \mid d(x, a) = r\rbrace = \emptyset$.
+    Then, $D(a, r) = \lbrace a \rbrace$ is open and $S \setminus \lbrace a \rbrace$ is open 
+    since for all $x \in S\setminus\lbrace a \rbrace, D(x, d(x, a)) \subseteq S \setminus\lbrace a \rbrace$.
+    We can find two open sets $D(a, r), S \setminus \lbrace a \rbrace$ s.t. $S$ is not connected.(contradiction)
+
+    Thus, for every $a$ in $S$ and every $r > 0$, the set $\lbrace x : d(x, a) = r\rbrace$ is nonempty.
+
+
     \item 
+
+    \item$\ $\vspace{-20pt} \begin{enumerate}
+        \item[($\implies$)] Assume $A$ is not in the set, that is, $A$ can be write as $\displaystyle\bigcup_{i \in E} I_i$ where $I_i$ is the interval in the set
+        and $I_m, I_n$ is disconnected. Thus, $A$ is disconnected.
+
+        therefore, $A$ is connected $\implies A$ is in the set.
+      
+        \item[($\impliedby$)]  For any $x, y$ in one of the four interval, 
+        exists $f: [0, 1] \to [x, y]$ with $f(t) = tx + (1-t)y$ is a continuous path.
+        Thus, $A$ is path-connected$\implies$ $A$ is connected.
+    \end{enumerate}
 \end{enumerate}
 \end{document}
