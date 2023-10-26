@@ -39,7 +39,7 @@
 \maketitle
 \begin{enumerate}
     \item First, we show that $\displaystyle\bigcap_{i=1}^{\infty} F_i$ is closed.
-    For $F_k$, we let $V_k = M\setminus F_k$ which is a open set.
+    For $F_k$, we let $V_k = M\setminus F_k$ which is a open set since $F_k$ is compact.
     Then, $M \setminus\displaystyle(\bigcap_{i=1}^{\infty} F_i)= \displaystyle\bigcup_{i=1}^{\infty} V_i = \displaystyle\lim_{i\to \infty} V_i$  is open.
     Thus, $\displaystyle\bigcap_{i=1}^{\infty} F_i$ is closed.
 
@@ -48,8 +48,14 @@
     Since $F_k \subseteq F_{k-1}$, $U, V \subseteq F_k$ for all k.
 
     And since $F_k$ is connected, $U \cup V \subsetneq F_k$ for all $k$.
-    Then, there exists some $x_{k, i}\in F_k \setminus U \cup V$.
+    Then, we let $S_i  = F_i \setminus (U \cup V)$.
+    Since $U, V$ are open, $U \cup V$ is open $\implies S_i$ is closed in $F_i$.
 
+    Since $S_i\subseteq F_i \subseteq F_1$ and $F_1$ is conpact, by Nested Interval Property,
+    $\displaystyle\bigcap_{i=1}^{\infty} S_i \neq \emptyset\implies \displaystyle\bigcap_{i=1}^{\infty} F_i = U \cup V \cup \displaystyle\bigcap_{i=1}^{\infty} S_i$ 
+    contradict to $\displaystyle\bigcap_{i=1}^{\infty} F_i = U \cup V$.
+
+    Thus, $\displaystyle\bigcap_{i=1}^{\infty} F_i$ is connected.
 
     \item  Assume there exists $a \in S$ and $r \geq 0$ s.t. $\lbrace x \mid d(x, a) = r\rbrace = \emptyset$.
     Then, $D(a, r) = \lbrace a \rbrace$ is open and $S \setminus \lbrace a \rbrace$ is open 
@@ -58,8 +64,11 @@
 
     Thus, for every $a$ in $S$ and every $r > 0$, the set $\lbrace x : d(x, a) = r\rbrace$ is nonempty.
 
+    \newpage
+    \item Assume $B$ is disconnected, There are two non-empty open set $U, V\subseteq B$ s.t. $U \cup V = B$.
+    Then, $U \cap A$ and $V \cap A$ are relative open to $A$ and disjoint in $A\implies A$ is not connected.(contradiction)
 
-    \item 
+    Thus, $B$ is connected.
 
     \item$\ $\vspace{-20pt} \begin{enumerate}
         \item[($\implies$)] Assume $A$ is not in the set, that is, $A$ can be write as $\displaystyle\bigcup_{i \in E} I_i$ where $I_i$ is the interval in the set
