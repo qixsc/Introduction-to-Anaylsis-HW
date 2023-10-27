@@ -39,7 +39,7 @@
 \maketitle
 \begin{enumerate}
     \item First, we show that $\displaystyle\bigcap_{i=1}^{\infty} F_i$ is closed.
-    For $F_k$, we let $V_k = M\setminus F_k$ which is a open set since $F_k$ is compact.
+    For $F_k$, we let $V_k = M\setminus F_k$ which is a open set since $F_k$ is compact(closed and bounded).
     Then, $M \setminus\displaystyle(\bigcap_{i=1}^{\infty} F_i)= \displaystyle\bigcup_{i=1}^{\infty} V_i = \displaystyle\lim_{i\to \infty} V_i$  is open.
     Thus, $\displaystyle\bigcap_{i=1}^{\infty} F_i$ is closed.
 
@@ -66,7 +66,10 @@
 
     \newpage
     \item Assume $B$ is disconnected, There are two non-empty open set $U, V\subseteq B$ s.t. $U \cup V = B$.
-    Then, $U \cap A$ and $V \cap A$ are relative open to $A$ and disjoint in $A\implies A$ is not connected.(contradiction)
+    Then, if $U \cap A$ and $V \cap A$ are relative open and nonempty in $A$ and disjoint in $A\implies A$ is not connected.(contradiction)
+
+    If one of $U$ or $V$ is empty in $A$, that means some of accumulation point is not connected to $A$.
+    Thus, we want to proof a accumulation point of open set $A$ is connected to $A$.
 
     Thus, $B$ is connected.
 
