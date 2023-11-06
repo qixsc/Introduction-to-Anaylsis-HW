@@ -45,12 +45,20 @@
 
         Therefore, $\displaystyle\prod_{n=1}^{\infty} a_n$ converges iff $\displaystyle\sum_{n=1}^{\infty} \ln(a_n)$ converges.
 
-        \item Suppose $\displaystyle\sum_{n=1}^{\infty} u_n$ convergs.
-        $\displaystyle\prod_{n=1}^{\infty} (1 + u_n) = \displaystyle\sum_{n=1}^{\infty} \ln(1 + u_n)$
+        \item Since $u_n\geq 0$ and converges, $\displaystyle\sum_{n=1}^{\infty} u_n$ converges if $u_n$ converges to $0$.
+        By limit comparison test $\displaystyle\lim_{n\to\infty} \dfrac{\ln(1 + u_n)}{u_n} = \displaystyle\lim_{x\to 0} \dfrac{\ln(1+x)}{x} = 1$,
+        $u_n$ converges $\iff$ $\displaystyle\prod_{n=1}^{\infty} (1 + u_n)$ converges.
+
+        \item Since $\displaystyle\sum_{n=1}^{\infty}u_n$ is absolutely convergent, by (b), $\displaystyle\prod_{n=1}^{\infty} (1 + |u_n|)$ is converges.
+        For any $\epsilon > 0$, $\exists N \in \mathbb{N}$, for all $a, b> N$ s.t. $|\displaystyle\sum_{n=1}^{a} \ln(1+|u_n|) - \displaystyle\sum_{n=1}^{b}\ln(1 + |u_n|)| < \epsilon$.
+        Then, $|\displaystyle\sum_{n=1}^{a} \ln(1 + u_n) - \displaystyle\sum_{n=1}^{b} \ln(1 + u_n)| < \epsilon$. Which implies $\displaystyle\sum_{n=1}^{\infty} \ln(1 + u_n)$ converges.
+        Thus, $\displaystyle\prod_{n=1}^{\infty} (1 + u_n)$ converges.
     \end{enumerate}
 
-    \item
+    \item $\dfrac{\sqrt{a_n}}{n^p}  = \sqrt{\dfrac{a_n}{n^{2p}}} \leq \dfrac{a_n + n^{-2p}}{2}$ by AM-GM Inequality.
+    Then, if $p\leq \dfrac{1}{2}$, then $\dfrac{1}{n^{2p}} \geq \dfrac{1}{n}$ diverges.
+    Therefore, if $p > \dfrac{1}{2}$, $\displaystyle\sum_{n=1}^{\infty} \sqrt{a_n} \cdot n^{-p} \leq \displaystyle\sum_{n=1}^{\infty} (\dfrac{a_n + n^{-2p}}{2})$ converges by p-test.
 
-    Counter example: $a_n = $, then $\displaystyle\sum_{n=1}^{\infty}\sqrt{\dfrac{a_n}{n}} = $
-\end{enumerate}
+    Counter example: $a_n = \dfrac{1}{n (\ln(n))^2}$, then $\displaystyle\sum_{n=1}^{\infty}\sqrt{\dfrac{a_n}{n}} = \displaystyle\sum_{n=1}^{\infty} \dfrac{1}{n(\ln(n))}$ diverges by integral-test. 
+    \end{enumerate}
 \end{document}
