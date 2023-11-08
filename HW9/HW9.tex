@@ -38,6 +38,63 @@
 \begin{document}
 \maketitle
 \begin{enumerate}
-    \item 
+    \item Since $\sum a_n$ is conditionally converges, then $\sum |a_n|$ diverges.
+    
+    We take $b_n = \left\lbrace\begin{matrix}
+        a_n & \text{if}\ a_n > 0\\
+        0 & \text{if}\ a_n \leq 0
+    \end{matrix}\right.$ 
+    and $c_n = \left\lbrace\begin{matrix}
+        0 & \text{if}\ a_n > 0\\
+        - a_n & \text{if}\ a_n \geq 0
+    \end{matrix}\right.$
+    Then, $\sum a_n = \sum b_n - c_n$.
+
+    We want to show that $\sum b_n = \infty$. First, we assume $\sum c_n$ converges.
+    Then, $\sum b_n = \sum (a_n + c_n) = \sum a_n + \sum c_n$ both converges.
+    Then, $\sum |a_n| = \sum |b_n + c_n| = \sum b_n + \sum c_n$ both converges(contradiction).
+
+    Thus, $c_n$ diverges, which implies $b_n$ diverges, too.
+
+    \item Since $\sum \sqrt{a_n a_{n+1}} \leq \sum \dfrac{a_n + a_{n+1}}{2} = \sum a_n - \dfrac{a_1}{2}$.
+    By comparison test, $\sum \sqrt{a_n a_{n+1}}$ converges.
+
+    Since $a_n$ is monotoneic, $a_n$ are all greater than $0$ or all lower than $0$.
+    Then, we suppose $a_n$ are greater than $0$ and monotone decreasing.
+    $\sum \sqrt{a_n a_{n+1}} \geq \sum a_{n+1} = \sum a_n - a_1$.
+    Then, by comparison test, $\sum a_n$ converges.
+
+    \item \begin{enumerate}
+        \item \begin{align*}
+            \dfrac{a_m}{r_m} + \dfrac{a_{m+1}}{r_{m+1}} + \cdot + \dfrac{a_n}{r_n} &> \dfrac{a_m + a_{m+1} + \cdot a_m}{a_m}\\
+            &= \dfrac{r_m - r_n}{r_m}\\
+            &= 1 - \dfrac{r_n}{r_m}
+        \end{align*}
+
+        Then, we want to show $\sum \dfrac{a_n}{r_n}$ is not Cauchy.
+        For all $N\in \mathbb{N}$ and $n > m \geq N$,
+        $\displaystyle\sum_{k=m}^{n} \dfrac{a_k}{r_k} > 1- \dfrac{r_n}{r_m} > \dfrac{a_{m+1}}{r_m}$
+
+
+        \item \begin{align*}
+            2(\sqrt{r_n} - \sqrt{r_{n+1}}) &= 2\dfrac{(\sqrt{r_n})(\sqrt{r_n} -\sqrt{r_n + 1})}{\sqrt{r_n}}\\
+            &= 2 \dfrac{(\sqrt{r_n})^2 - (\sqrt{r_n}\sqrt{r_{n + 1}})}{\sqrt{r_n}}\\
+            &\geq 2\dfrac{r_n - r_{n + 1}}{\sqrt{r_n}}\\
+            &= 2\dfrac{a_n}{r_n}\\
+            &> \dfrac{a_n}{r_n}
+        \end{align*}
+        
+        We want to proof $\displaystyle\sum_{n=m}^{\infty} \dfrac{a_n}{\sqrt{r_n}} \to \infty$ as $m \to \infty$.
+        $\displaystyle\sum_{n=m}^{\infty} \dfrac{a_n}{\sqrt{r_n}} < \displaystyle\sum_{n=m}^{\infty} 2(\sqrt{r_n} - \sqrt{r_{n+1}}) < 2\sqrt{r_m}$.
+        And since $\sum a_n$ converges, $r_n \to 0$ as $n \to \infty$.
+        Thus, by comparison test, $\sum \dfrac{a_n}{\sqrt{r_n}}$ converges.
+    \end{enumerate}
+
+    \item We want to show $\sum a_n - \displaystyle\lim_{n\to 1^-} \sum a_nx^n = \displaystyle\lim_{n\to i^-}\sum  a_n (1 - x^n) = 0$.
+    Since $\sum a_n$ converges, $a_n\to 0$ as $n\to \infty$.
+    
+    Then, let $x = 1-\epsilon$, then $x \to 1- \implies \epsilon \to 0$.
+    $\sum a_n(1-x^n) = \sum a_n \cdot \epsilon^n < \epsilon\cdot\sum a_n \to 0$ as $\epsilon \to 0$.
+    Thus, $\displaystyle\lim_{x\to 1^-} \sum a_n x^n = \sum a_n$.
 \end{enumerate}
 \end{document}
