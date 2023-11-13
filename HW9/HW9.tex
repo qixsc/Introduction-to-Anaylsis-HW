@@ -38,23 +38,14 @@
 \begin{document}
 \maketitle
 \begin{enumerate}
-    \item Since $\sum a_n$ is conditionally converges, then $\sum |a_n|$ diverges.
+    \item Let $\lbrace a_k^+\rbrace$ be the positive elements in $\lbrace a_k\rbrace$, and $\lbrace a_k^-\rbrace$ be the negative ones.
     
-    We take $b_n = \left\lbrace\begin{matrix}
-        a_n & \text{if}\ a_n > 0\\
-        0 & \text{if}\ a_n \leq 0
-    \end{matrix}\right.$ 
-    and $c_n = \left\lbrace\begin{matrix}
-        0 & \text{if}\ a_n > 0\\
-        - a_n & \text{if}\ a_n \geq 0
-    \end{matrix}\right.$
-    Then, $\sum a_n = \sum b_n - c_n$.
+    By Riemann's Theorem, if $\displaystyle\sum a_k$ is c.c., for any $i \in \mathbb{N}$,
+    we can find smallest $p_i, q_i\in \mathbb{N}$ s.t. $i+1 < \displaystyle\sum_{k=1}^{p_{i+1}} a_k^+ + \displaystyle\sum_{k=1}^{q_i} a_k^-$
+    and $i+1 < \displaystyle\sum_{k=1}^{p_{i+1}} a_k^+ + \displaystyle\sum_{k=1}^{q_{i+1}} a_k^-$.
 
-    We want to show that $\sum b_n = \infty$. First, we assume $\sum c_n$ converges.
-    Then, $\sum b_n = \sum (a_n + c_n) = \sum a_n + \sum c_n$ both converges.
-    Then, $\sum |a_n| = \sum |b_n + c_n| = \sum b_n + \sum c_n$ both converges(contradiction).
-
-    Thus, $c_n$ diverges, which implies $b_n$ diverges, too.
+    Then, $i < \displaystyle\sum_{k=1}^{p_i} a_k^+ + \displaystyle\sum_{k=1}^{q_i} a_k^-$ for all $i\in \mathbb{N}$.
+    Thus, we can find a rearrangement which partial sum diverges to infinity.
 
     \item Since $\sum \sqrt{a_n a_{n+1}} \leq \sum \dfrac{a_n + a_{n+1}}{2} = \sum a_n - \dfrac{a_1}{2}$.
     By comparison test, $\sum \sqrt{a_n a_{n+1}}$ converges.
