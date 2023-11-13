@@ -71,9 +71,15 @@
             &= 1 - \dfrac{r_n}{r_m}
         \end{align*}
 
+        \newpage
         Then, we want to show $\sum \dfrac{a_n}{r_n}$ is not Cauchy.
-        For all $N\in \mathbb{N}$ and $n > m \geq N$,
-        $\displaystyle\sum_{k=m}^{n} \dfrac{a_k}{r_k} > 1- \dfrac{r_n}{r_m} > \dfrac{a_{m+1}}{r_m}$
+        For any $m \in \mathbb{N}$, we can find a $n \in \mathbb{N}$, $n > m$ s.t. 
+        $r_n = \displaystyle\sum_{k=n}^{\infty} a_k > \dfrac{1}{2} \displaystyle\sum_{k=m}^{\infty} a_k = \dfrac{1}{2}r_m$
+        since $\displaystyle\sum a_k$ converges.
+
+        Thus, for $N \in \mathbb{N}$ and $m > N$, we can find a $n > m$ s.t. 
+        $\displaystyle\sum_{k=m}^{n} \dfrac{a_k}{r_k} > 1- \dfrac{r_n}{r_m} > 1 - \dfrac{1}{2} = \dfrac{1}{2}$.
+        Therefore, $\displaystyle\sum \dfrac{a_k}{r_k}$ is not Cauchy implies it diverges.
 
 
         \item \begin{align*}
