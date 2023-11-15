@@ -48,10 +48,21 @@
             Then, for $y \in f(\bar{A})$, $D(y, \epsilon)\cap f(A) \neq \emptyset$ for all $\epsilon > 0$.
             Thus, $y \in \overline{f(A)}$.
             
-            \item[($\impliedby$)] Since $f(\bar{A})\subseteq \overline{f(A)}$, 
+            \item[($\impliedby$)] For $V$ closed in $T$, then $f(\closure(f^{-1}(V))) \subseteq \closure(V) = V$.
+            Applied $f^{-1}$ on the both side, $\closure(f^{-1}(V)) \subseteq f^{-1}(\closure(V)) = f^{-1}(V)$.
+            Thus, $f^{-1}(V)$ is closed if $V$ is closed implies $f$ is continuous.           
+
         \end{enumerate}
 
-        \item 
+        \item Since $f(p) = g(p)$ for all $p \in S$ and $\bar{E} = S$.
+        For any $x\in S$, $x\in \bar{E}$, then we can find a sequence $\lbrace x_i\rbrace\subseteq E$ converges to $x$.
+
+        Since $f(x_i) = g(x_i)$ for all $i\in \mathbb{N}$, $|f(x) - g(x)| \leq |f(x) - f(x_i)| + |f(x_i) - g(x)| = |f(x) - f(x_i)| + |g(x)- g(x_i)| \to 0$ as $i\to \infty$.
+        Then, $f(x) = g(x)$ for all $x\in S$.
     \end{enumerate}
+
+    \item Since $B$ is compact in $\mathbb{R}^n$, $B$ is closed and bounded.
+    And since $f$ is 1-to-1 and continuous function, $f^{-1}: f(B) \to f$ is also 1-to-1 and onto.
+    
 \end{enumerate}
 \end{document}
