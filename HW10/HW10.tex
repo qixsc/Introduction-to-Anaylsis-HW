@@ -62,14 +62,17 @@
     \end{enumerate}
 
     \item Since $B$ is compact, $f(B)$ is compact.
-    Then, we want to show for $V$ is closed in $f(B)$, $f^{-1}(V)$ is closed in $B$.
-    For a sequence $\lbrace x_i\mid x_i \in f^{-1}(V)\rbrace$ converges to $x\in B$,
-    $\lbrace f(x_i)\rbrace$ is a sequence in $V$.
-    Since $V$ is compact and $f$ is continuous and one-to-one, $f(x_i)$ converges to a point $y = f(x)\in V$.
-    Thus, $x \in f^{-1}(V)$.
-    Therefore, $f^{-1} (V)$ is closed.
-    By corollary in textbook, $f^{-1}$ is continuous.
+    Then, we want to show for an sequence $y_k$ converges to $y\in f(B)$,
+    we can get $f^{-1}(y_k)$ converges to $f^{-1}(y)$.
+    Since $f$ is one-to-one, we can find $x_k = f^{-1}(y_k)\in B$ and $x = f^{-1}(y)$.
+    Then, assume $x_k$ is not converges to $x$, 
+    $|x_k -x| > \delta$ for some $\delta > 0$ and $k\in \mathbb{N}$.
+    Then, $f(D(x, \delta)\cap B) \not\subseteq D(f(x), \epsilon)$ since $f$ is one-to-one.
+    Thus, $f$ is not continuous.(contradiction)
 
+    Therefore, $f^{-1}$ is continuous.
+    
+    \newpage
     \item Since $f$ is strictly increasing, $f$ is one-to-one.
     By question $2$, $f^{-1}$ is continuous, too.
 
