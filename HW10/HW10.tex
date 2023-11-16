@@ -61,8 +61,25 @@
         Then, $f(x) = g(x)$ for all $x\in S$.
     \end{enumerate}
 
-    \item Since $B$ is compact in $\mathbb{R}^n$, $B$ is closed and bounded.
-    And since $f$ is 1-to-1 and continuous function, $f^{-1}: f(B) \to f$ is also 1-to-1 and onto.
+    \item Since $B$ is compact, $f(B)$ is compact.
+    Then, we want to show for $V$ is closed in $f(B)$, $f^{-1}(V)$ is closed in $B$.
+    For a sequence $\lbrace x_i\mid x_i \in f^{-1}(V)\rbrace$ converges to $x\in B$,
+    $\lbrace f(x_i)\rbrace$ is a sequence in $V$.
+    Since $V$ is compact and $f$ is continuous and one-to-one, $f(x_i)$ converges to a point $y = f(x)\in V$.
+    Thus, $x \in f^{-1}(V)$.
+    Therefore, $f^{-1} (V)$ is closed.
+    By corollary in textbook, $f^{-1}$ is continuous.
+
+    \item Since $f$ is strictly increasing, $f$ is one-to-one.
+    By question $2$, $f^{-1}$ is continuous, too.
+
+    Then, we want to check $f^{-1}$ is strictly increasing.
+    For $f(x_1) < f(x_2)$ with $x_1, x_2 \in \mathbb{R}$.
+    Assume $x_1 > x_2$.
+    Then, $f(x_1) > f(x_2)$.(contradiction)
+
+    Thus, $f(x_1) < f(x_2)\implies f^{-1}(f(x_1))=x_1 < x_2 = f^{-1}(f(x_2))$.
+    Therefore, $f^{-1}$ is continuous and strictly increasing.
     
 \end{enumerate}
 \end{document}
