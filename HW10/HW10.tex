@@ -67,21 +67,34 @@
     Since $f$ is one-to-one, we can find $x_k = f^{-1}(y_k)\in B$ and $x = f^{-1}(y)$.
     Then, assume $x_k$ is not converges to $x$, 
     $|x_k -x| > \delta$ for some $\delta > 0$ and $k\in \mathbb{N}$.
-    Then, $f(D(x, \delta)\cap B) \not\subseteq D(f(x), \epsilon)$ since $f$ is one-to-one.
+    Then, $f(D(x, \delta)\cap B) \not\subseteq D(f(x), \epsilon)\cap f(B)$ since $f$ is one-to-one.
     Thus, $f$ is not continuous.(contradiction)
 
     Therefore, $f^{-1}$ is continuous.
     
     \newpage
-    \item Since $f$ is strictly increasing, $f$ is one-to-one.
-    By question $2$, $f^{-1}$ is continuous, too.
-
-    Then, we want to check $f^{-1}$ is strictly increasing.
+    \item Since $f$ is strictly increasing, $f$ and $f^{-1}$ is one-to-one.
+    
+    First, e want to check $f^{-1}$ is strictly increasing.
     For $f(x_1) < f(x_2)$ with $x_1, x_2 \in \mathbb{R}$.
     Assume $x_1 > x_2$.
     Then, $f(x_1) > f(x_2)$.(contradiction)
-
     Thus, $f(x_1) < f(x_2)\implies f^{-1}(f(x_1))=x_1 < x_2 = f^{-1}(f(x_2))$.
+    
+    Then, we want to check $f^{-1}$ is continuous.
+    For any decreasing sequence $y_k\to y$ for $y_k, y\in f(\mathbb{R})$.
+    Since $y_k > y$ for all $k$, $f^{-1}(y_k) > f^{-1}(y)$ for all y.
+    By MCT, $f^{-1}(y_k)$ converges.
+    Assume $f^{-1}(y_k)$ converges to $x > f^{-1}(y)$.
+    Then, we can find $y' = f(x) > y$.
+    Therefore, we can find some $N\in \mathbb{N}$ s.t. $y_k< f(x)$ for all $k > N$.
+    Then, $f^{-1}(y_k) > f(x)$ for all $k > N$.
+    Thus, $f^{-1}(y_k)$ doesn't converge to $x$.
+    Hence, $f^{-1}(y_k)$ converges to $f^{-1}(y)$.
+
+    For increasing sequence, we can get the same result by similar way.
+    Thus, by BWT, sequence converges to $y\in f(\mathbb{R})$, it converges to $f^{-1}(y)$.
+    
     Therefore, $f^{-1}$ is continuous and strictly increasing.
     
 \end{enumerate}
