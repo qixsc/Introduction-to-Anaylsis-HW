@@ -1,0 +1,72 @@
+\documentclass[12pt]{article}
+
+\topmargin -40pt
+\marginparwidth 0pt
+\oddsidemargin  -40pt
+\evensidemargin 0pt
+\marginparsep 0pt
+\linespread{1.9}
+\textwidth 7.2 in
+ \textheight  10 in
+ \hoffset  0.1in
+
+\usepackage{amsthm,amsmath,amssymb,amscd,verbatim,epsfig}
+\usepackage{amsopn}
+\usepackage{mathptmx}
+\usepackage{amsfonts}
+%\usepackage{setapace}
+\usepackage{graphicx}
+\usepackage{bm}
+%\usepackage{CJK}
+\usepackage{ulem}
+\usepackage{multicol}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{Times New Roman}
+\setCJKmainfont{TaipeiSansTCBeta-Regular}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+
+\DeclareMathOperator{\closure}{cl}
+\DeclareMathOperator{\interior}{int}
+
+\title{Homework 11 of Introduction to Analysis (I), Honor Class}
+\author{AM15 黃琦翔 111652028}
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+    \item \begin{enumerate}
+        \item Let $g(x_0) = \displaystyle\lim_{x\to x_0} f(x)$ for all $x_0 \in \bar{A}$.
+        Since $f$ is uniform continuous, $g(x) = f(x)$ for all $x\in A$ and $g$ is continuous.
+        Then, we want to show $g$ is uniform continuous.
+
+        Assume $g$ is not uniform continuous, exists a $\epsilon > 0$, for all $\delta > 0$ 
+        s.t. $|x - x_0| < \delta$ and $|g(x) - g(x_0)| > \epsilon$.
+
+        \item Since $A$ is bounded, $\bar{A}$ is compact.
+        Then, $f(A) \subseteq f(\bar{A})$ is bounded since $f(\bar{A})$ is compact.
+    \end{enumerate}
+
+    \item \begin{enumerate}
+        \item For any $\epsilon > 0$, take $\delta = \epsilon$, then for $\| x - x_0\| < \delta$, $|f_A(x) - f_A(x_0)| < |(f_A(x_0) + \epsilon) -f_A(x_0)| = \epsilon$.
+        
+        Then, $f_A(x)$ is uniform continuous.
+
+        \item For $x\in \bar{A}$, $\inf\{ \| x-y\| \mid y\in A\} = 0$.
+        Thus, $f_A(x) = 0$ for all $x\in \bar{A}$
+
+        And since $x\notin \bar{A}$, $\inf\{ \| x-y\| \mid y\in A\} > 0$, $\bar{A} = \{ x\mid f_A(x) = 0\}$
+    \end{enumerate}
+    
+    \item Since $f$ is one-to-one, then $f(x) = f(y)$ implies $x = y$.
+    Assume $f$ is not monotonic but continuous, exists a $x$ s.t. $x < x'$ for all $x' \in D(x, \epsilon)$ 
+    or $x > x'$ for all $x' \in D(x, \epsilon)$.
+    Then, since $(a, b)$ is path-connected, by IVT, we can find $y, y'\in D(x, \epsilon)$ s.t. $f(y) = f(y')$ with $y \neq y'$.
+    That is, $f$ is not one-to-one(contradiction).
+
+    Thus, $f$ is one-to-one and monotonic.
+\end{enumerate}
+\end{document}
