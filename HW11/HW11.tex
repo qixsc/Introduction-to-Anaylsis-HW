@@ -51,9 +51,9 @@
     \end{enumerate}
 
     \item \begin{enumerate}
-        \item For any $\epsilon > 0$, take $\delta = \epsilon$, then for $\| x - x_0\| < \delta$, $|f_A(x) - f_A(x_0)| < |(f_A(x_0) + \epsilon) -f_A(x_0)| = \epsilon$.
-        
-        Then, $f_A(x)$ is uniform continuous.
+        \item For any $x_0\in \mathbb{R}^n$ and $\epsilon > 0$, $f_A(x_0) - \epsilon < f_A(x) < f_A(x_0) + \epsilon$ for $x\in D(x_0, \epsilon)$ tirvially.
+        Then, $|f_A(x) - f_A(x_0)| < \delta = \epsilon$ for $\| x - x_0 \| < \epsilon$.
+        Thus, $f_A$ is uniform continuous.
 
         \item For $x\in \bar{A}$, $\inf\{ \| x-y\| \mid y\in A\} = 0$.
         Thus, $f_A(x) = 0$ for all $x\in \bar{A}$
