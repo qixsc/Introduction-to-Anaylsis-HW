@@ -44,7 +44,11 @@
         Then, we want to show $g$ is uniform continuous.
 
         Assume $g$ is not uniform continuous, exists a $\epsilon > 0$, for all $\delta > 0$ 
-        s.t. $|x - x_0| < \delta$ and $|g(x) - g(x_0)| > \epsilon$.
+        s.t. $|g(x) - g(x_0)| > \epsilon$ for all $x \in D(x, \delta)\cap A$. 
+        Since $f$ is uniform continuous, for $x_1, x_2 \in D(x, \delta)\cap A\setminus \lbrace x \rbrace$, we can find a $\epsilon' > 0$ s.t. $|g(x_1) - g(x_2)| = |f(x_1) - f(x_2)| < \epsilon$ for $|x_1 - x_2| < 2\delta$.
+        Which implies $|g(x_1) - g(x_0)| < \epsilon$, or $g(x)$ is not continuous.
+
+        Thus, $g$ is uniform continuous.
 
         \item Since $A$ is bounded, $\bar{A}$ is compact.
         Then, $f(A) \subseteq f(\bar{A})$ is bounded since $f(\bar{A})$ is compact.
