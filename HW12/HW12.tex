@@ -38,6 +38,32 @@
 \begin{document}
 \maketitle
 \begin{enumerate}
-    \item 
+    \item We claim that $a_n$ is a Cauchy. 
+    Then, for $m > n\geq N$
+    \begin{align*}
+        |f(\dfrac{1}{n}) - f(\dfrac{1}{m})| &< |(\dfrac{1}{n} - \dfrac{1}{m})\cdot f'(c)| \text{ for some } c\in [\dfrac{1}{m}, \dfrac{1}{n}]\\
+        &< \dfrac{1}{n} - \dfrac{1}{m}\\
+        &< \dfrac{1}{n}\\
+        &\leq \dfrac{1}{N}
+    \end{align*}
+
+    Thus, for any $\epsilon > 0$, we take $N > \dfrac{1}{\epsilon}$.
+    Therefore, $a_n$ is Cauchy$\implies \displaystyle\lim_{n\to\infty} a_n$ exists.
+
+    \item Since $f'(x)$ exists on $(a, b)$, we can find $s_1 = \sup\{f'(x) \mid x\in (a, b)\},\ s_2 = \displaystyle\lim_{x\to a^+} f(x)$ and $s = \max\{ s_1, s_2\}$.
+    
+    Then, for $\epsilon > 0$, we take $\delta = \dfrac{\epsilon}{s}$, then $|f(x) - f(x_0)| < |x - x_0| s < \delta s= \epsilon$.
+    Thus, $f$ is uniform continuous.
+
+    \item \begin{enumerate}
+        \item We want to show that when $x\to \infty$, $f(x+h)-f(x) \to hb$ for all $h$.
+        
+        Since $f'(x) \to b$ as $x\to \infty$, for any $\epsilon > 0$, exists a $N\in \mathbb{N}$ s.t. $|f'(x) - b| < \epsilon$ for all $x > N$.
+        Thus, for $x > N$, $(b - \epsilon)h < f(x + h) - f(x) < (b + \epsilon)h$. Thus, $|\dfrac{f(x + h) - f(x)}{h} - b| < \epsilon$ for $x > N$.
+
+        Therefore, $\displaystyle\lim_{x\to\infty} \dfrac{f(x + h) - f(x)}{h} - b = 0$.
+
+        \item Since $f(x) \to a$, we assume $f'(x)$
+    \end{enumerate}
 \end{enumerate}
 \end{document}
