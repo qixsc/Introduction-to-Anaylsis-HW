@@ -63,7 +63,20 @@
 
         Therefore, $\displaystyle\lim_{x\to\infty} \dfrac{f(x + h) - f(x)}{h} - b = 0$.
 
-        \item Since $f(x) \to a$, we assume $f'(x)$
+        \item Since $f(x) \to a$, for $\epsilon, h> 0$, exsits $N\in\mathbb{N}$ s.t. $|f(x) - a| < \dfrac{\epsilon \cdot h}{2}$.
+        
+        Then, for $\displaystyle\lim_{x\to\infty} f'(x) = \displaystyle\lim_{x\to\infty} |\dfrac{f(x + h)-f(x)}{h}| \leq \displaystyle\lim_{x\to\infty} \dfrac{|f(x + h) - a| + |a - f(x)|}{h} < 2\dfrac{\epsilon\cdot h}{2h} = \epsilon$.
+
+        Thus, $f'(x) \to 0$ as $x\to \infty$
+
+        \newpage
+        \item For any $\epsilon > 0$, exists a $N\in\mathbb{N}$ s.t. $|f'(x_0) - b| < \epsilon$ for all $x_0 > N$.\begin{align*}
+            \displaystyle\lim_{x\to\infty}|\dfrac{f(x)}{x} - b| &= \displaystyle\lim_{x\to\infty}|\dfrac{f(x_0) + f'(x_0)(x-x_0)}{x} - b|\\
+            &=\displaystyle\lim_{x\to\infty} |\dfrac{f(x_0)}{x} - \dfrac{f'(x_0)x_0}{x}| + |f'(x_0) - b|\\
+            &< 0 + \epsilon\ \text{for } x_0 > N
+        \end{align*}
+
+        Thus, $\dfrac{f(x)}{x} \to b$ as $x\to\infty$.
     \end{enumerate}
 \end{enumerate}
 \end{document}
