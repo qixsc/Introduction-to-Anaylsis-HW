@@ -71,14 +71,16 @@
 
         \newpage
         \item For any $\epsilon > 0$, there exists a $N\in\mathbb{N}$ s.t. $|f'(x) - b| < \epsilon$ for all $x > N$.\begin{align*}
-            \displaystyle\lim_{x\to\infty}|\dfrac{f(x)}{x} - b| &= \displaystyle\lim_{x\to\infty}|\dfrac{f(x_0) + f'(x_1)(x-x_0)}{x} - b|\\
-            &=\displaystyle\lim_{x\to\infty} |\dfrac{f(x_0)- f'(x_1)x_0}{x}| + |f'(x_1) - b|\\
+            \lim_{x\to\infty}|\dfrac{f(x)}{x} - b| &= \lim_{x\to\infty}|\dfrac{f(x_0) + f'(x_1)(x-x_0)}{x} - b|\\
+            &=\lim_{x\to\infty} |\dfrac{f(x_0)- f'(x_1)x_0}{x}| + |f'(x_1) - b|\\
             &< 0 + \epsilon\ \text{for } x_1 > x_0 > N
         \end{align*}
 
         Thus, $\dfrac{f(x)}{x} \to b$ as $x\to\infty$.
     \end{enumerate}
 
-    \item 
+    \item\begin{enumerate}
+        \item $\displaystyle\lim_{h\to 0}(\dfrac{f(a+2h) - f(a+h)}{h^2} - \dfrac{f(a+h) - f(a)}{h^2}) = \displaystyle\lim_{h\to 0} \dfrac{f'(a+h) - f'(a)}{h}= f''(a)$.
+    \end{enumerate}
 \end{enumerate}
 \end{document}
