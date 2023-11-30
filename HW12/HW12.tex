@@ -70,10 +70,12 @@
         Thus, $f'(x) \to 0$ as $x\to \infty$
 
         \newpage
-        \item For any $\epsilon > 0$, there exists a $N\in\mathbb{N}$ s.t. $|f'(x) - b| < \epsilon$ for all $x > N$.\begin{align*}
+        \item For any $\epsilon > 0$, there exists a $N\in\mathbb{N}$ s.t. $|f'(x) - b| < \epsilon$ for all $x > N$.
+        Then, for any $x_0 > N$
+        \begin{align*}
             \lim_{x\to\infty}|\dfrac{f(x)}{x} - b| &= \lim_{x\to\infty}|\dfrac{f(x_0) + f'(x_1)(x-x_0)}{x} - b|\\
-            &=\lim_{x\to\infty} |\dfrac{f(x_0)- f'(x_1)x_0}{x}| + |f'(x_1) - b|\\
-            &< 0 + \epsilon\ \text{for } x_1 > x_0 > N
+            &=\lim_{x\to\infty} |\dfrac{f(x_0)- f'(x_1)x_0}{x}| + |f'(x_1) - b|\text{ for } x_1\in [x_0, x]\\
+            &< 0 + \epsilon = \epsilon
         \end{align*}
 
         Thus, $\dfrac{f(x)}{x} \to b$ as $x\to\infty$.
