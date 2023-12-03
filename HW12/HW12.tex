@@ -43,8 +43,7 @@
     \begin{align*}
         |f(\dfrac{1}{n}) - f(\dfrac{1}{m})| &< |(\dfrac{1}{n} - \dfrac{1}{m})\cdot f'(c)| \text{ for some } c\in [\dfrac{1}{m}, \dfrac{1}{n}]\\
         &< \dfrac{1}{n} - \dfrac{1}{m}\\
-        &< \dfrac{1}{n}\\
-        &\leq \dfrac{1}{N}
+        &< \dfrac{1}{n} \leq \dfrac{1}{N}
     \end{align*}
 
     Thus, for any $\epsilon > 0$, we take $N > \dfrac{1}{\epsilon}$.
@@ -56,20 +55,26 @@
     Thus, $f$ is uniform continuous.
 
     \item \begin{enumerate}
-        \item We want to show that when $x\to \infty$, $f(x+h)-f(x) \to hb$ for all $h$.
-        
-        Since $f'(x) \to b$ as $x\to \infty$, for any $\epsilon > 0$, exists a $N\in \mathbb{N}$ s.t. $|f'(x) - b| < \epsilon$ for all $x > N$.
-        Thus, for $x > N$, $(b - \epsilon)h < f(x + h) - f(x) < (b + \epsilon)h$. Thus, $|\dfrac{f(x + h) - f(x)}{h} - b| < \epsilon$ for $x > N$.
+        \item Claim that for any $\epsilon > 0$, there exists a $N\in \mathbb{N}$ s.t. $|\dfrac{f(x+h) - f(x)}{h} - b| < \epsilon$ for $x > N$ and all $h$.
+
+        Suppose $b \geq 0$.
+        Since $f'(x) \to b$ as $x\to \infty$, for any $\epsilon > 0$, exists a $N_0\in \mathbb{N}$ s.t. $|f'(x) - b| < \epsilon$ for all $x > N_0$.
+        Thus, $b - \epsilon < f'(x) < b + \epsilon$ for all $x > N_0$.
+        By MVT, $f(x + h) = f(x) + h\cdot f'(c)$ for all $h$ and some $c \in [x + h, x]$ or $c\in [x, x+h]$.
+        Thus, $|f(x + h) - f(x)| < |h|(b + \epsilon)$ for all $h$ and $x > N_0$.
+        Then, we can get the result by taking $N = N_0$.
+
+        If $b < 0$, we can get the same result $|f(x+h) - f(x)| < |h||b-\epsilon|$ by the silmilar way.
 
         Therefore, $\displaystyle\lim_{x\to\infty} \dfrac{f(x + h) - f(x)}{h} - b = 0$.
 
+        \newpage
         \item Since $f(x) \to a$, for $\epsilon, h> 0$, exsits $N\in\mathbb{N}$ s.t. $|f(x) - a| < \dfrac{\epsilon \cdot h}{2}$.
         
         Then, for $\displaystyle\lim_{x\to\infty} f'(x) = \displaystyle\lim_{x\to\infty} |\dfrac{f(x + h)-f(x)}{h}| \leq \displaystyle\lim_{x\to\infty} \dfrac{|f(x + h) - a| + |a - f(x)|}{h} < 2\dfrac{\epsilon\cdot h}{2h} = \epsilon$.
 
         Thus, $f'(x) \to 0$ as $x\to \infty$
 
-        \newpage
         \item For any $\epsilon > 0$, there exists a $N\in\mathbb{N}$ s.t. $|f'(x) - b| < \epsilon$ for all $x > N$.
         Then, for any $x_0 > N$
         \begin{align*}
@@ -82,7 +87,20 @@
     \end{enumerate}
 
     \item\begin{enumerate}
-        \item $\displaystyle\lim_{h\to 0}(\dfrac{f(a+2h) - f(a+h)}{h^2} - \dfrac{f(a+h) - f(a)}{h^2}) = \displaystyle\lim_{h\to 0} \dfrac{f'(a+h) - f'(a)}{h}= f''(a)$.
+        \item $\displaystyle\lim_{h\to 0} \dfrac{f(a+2h)-2f(a+h)+f(a)}{h^2} = \displaystyle\lim_{h\to 0} \dfrac{f'(a+2h) - f'(a+h)}{h} = \displaystyle\lim_{h\to 0} 2f''(a+2h) - f''(a + h)$ by L'Hospital Rule.
+
+        Since $f$ is is three times differentiable, then $f''$ is continuous.
+        Thus, we can find $\delta_1 > 0$ s.t. $|f''(a+h) - f''(a)| < \dfrac{\epsilon}{3}$ for all $|h| < \delta_1$,
+        and $\delta_2 > 0$ s.t. $|f''(a + 2h) - f''(a)| < \dfrac{\epsilon}{3}$ for all $|h| < \delta_2$. 
+        Then, for $|h| < \min\{\delta_1, \delta_2\}$, \begin{align*}
+            |2f''(a+2h) - f''(a+h) - f''(a)| &= |f''(a+2h) - f''(a+h)| + |f''(a+2h) - f''(a)|\\
+            &< |f''(a+2h) - f''(a)| + |f''(a) - f(a + h)| + |f''(a + 2h) - f''(a)|\\
+            &\leq \dfrac{\epsilon}{3} + \dfrac{\epsilon}{3} + \dfrac{\epsilon}{3} = \epsilon
+        \end{align*}
+       
+        Thus, $\displaystyle\lim_{h\to 0}\dfrac{f(a + 2h) - 2f(a + h) + f(a)}{h^2} = f''(a)$.
+
+        \item 
     \end{enumerate}
 \end{enumerate}
 \end{document}
