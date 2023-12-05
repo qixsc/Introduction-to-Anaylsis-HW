@@ -92,12 +92,14 @@
             &= 2\lim_{h\to 0} \dfrac{f'(a + 2h) - f'(a)}{2h} - \lim_{h\to 0}\dfrac{f'(a + h) - f'(a)}{h}\\
             &= 2f''(a) - f''(a) = f''(a)
         \end{align*}    
-        Thus, $\displaystyle\lim_{h\to 0} \dfrac{f(a+2h)-2f(a+h)+f(a)}{h^2} = f''(a)$.
 
         \item \begin{align*}
             \lim_{h\to 0} \dfrac{f(a + 3h) - 3f(a + 2h) + 3f(a + h) - f(a)}{h^3} &= \lim_{h\to 0} \dfrac{3f'(a+3h) - 6f'(a + 2h) + 3f(a + h)}{3h^2}\\
             &= \lim_{h\to 0} \dfrac{f'(a + 3h) - 2f'(a+2h) + f'(a + h)}{h^2}\\
-            &= \lim_{h\to 0} \dfrac{f'(a + 2h) - 2f'(a + h) + f'(a)}{h^2}\\
+            &= \lim_{h\to 0} \dfrac{3f''(a + 3h) - 4f''(a + 2h) + f''(a+h)}{2h}\\
+            &= \lim_{h\to 0} \dfrac{3f''(a+3h) - 3f''(a)}{2h} - \dfrac{4f''(a+2h) - 4f''(a)}{2h}\\
+            &\quad+ \dfrac{f''(a + h) - f''(a)}{2h}\\
+            &= (\dfrac{9}{2} - 4 + \dfrac{1}{2}) f^{(3)}(a)\\
             &= f^{(3)}(a)
         \end{align*}
 
