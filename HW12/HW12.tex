@@ -55,26 +55,19 @@
     Thus, $f$ is uniform continuous.
 
     \item \begin{enumerate}
-        \item Claim that for any $\epsilon > 0$, there exists a $N\in \mathbb{N}$ s.t. $|\dfrac{f(x+h) - f(x)}{h} - b| < \epsilon$ for $x > N$ and all $h$.
+        \item Since $f$ is differentiable, $f$ is continuous.
+        Thus, for any $h> 0$, there exists a $c \in (x, x+h)$ s.t. $f'(c)h = f(x + h) - f(x)$ by MCT.
+        For $h < 0$, there also exists $c\in (x+h, x)$ s.t. $f'(c) h = f(x+h) - f(x)$.
 
-        Suppose $b \geq 0$.
-        Since $f'(x) \to b$ as $x\to \infty$, for any $\epsilon > 0$, exists a $N_0\in \mathbb{N}$ s.t. $|f'(x) - b| < \epsilon$ for all $x > N_0$.
-        Thus, $b - \epsilon < f'(x) < b + \epsilon$ for all $x > N_0$.
-        By MVT, $f(x + h) = f(x) + h\cdot f'(c)$ for all $h$ and some $c \in [x + h, x]$ or $c\in [x, x+h]$.
-        Thus, $|f(x + h) - f(x)| < |h|(b + \epsilon)$ for all $h$ and $x > N_0$.
-        Then, we can get the result by taking $N = N_0$.
+        Thus, $\displaystyle\lim_{x\to\infty} \dfrac{f(x+h) - f(x)}{h} = \displaystyle\lim_{x\to\infty} f'(c) = b$.
 
-        If $b < 0$, we can get the same result $|f(x+h) - f(x)| < |h||b-\epsilon|$ by the silmilar way.
-
-        Therefore, $\displaystyle\lim_{x\to\infty} \dfrac{f(x + h) - f(x)}{h} - b = 0$.
-
-        \newpage
         \item Since $f(x) \to a$, for $\epsilon, h> 0$, exsits $N\in\mathbb{N}$ s.t. $|f(x) - a| < \dfrac{\epsilon \cdot h}{2}$.
         
         Then, for $\displaystyle\lim_{x\to\infty} f'(x) = \displaystyle\lim_{x\to\infty} |\dfrac{f(x + h)-f(x)}{h}| \leq \displaystyle\lim_{x\to\infty} \dfrac{|f(x + h) - a| + |a - f(x)|}{h} < 2\dfrac{\epsilon\cdot h}{2h} = \epsilon$.
 
         Thus, $f'(x) \to 0$ as $x\to \infty$
 
+        \newpage
         \item For any $\epsilon > 0$, there exists a $N\in\mathbb{N}$ s.t. $|f'(x) - b| < \epsilon$ for all $x > N$.
         Then, for any $x_0 > N$
         \begin{align*}
