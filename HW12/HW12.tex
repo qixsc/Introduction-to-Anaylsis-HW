@@ -87,20 +87,20 @@
     \end{enumerate}
 
     \item\begin{enumerate}
-        \item $\displaystyle\lim_{h\to 0} \dfrac{f(a+2h)-2f(a+h)+f(a)}{h^2} = \displaystyle\lim_{h\to 0} \dfrac{f'(a+2h) - f'(a+h)}{h} = \displaystyle\lim_{h\to 0} 2f''(a+2h) - f''(a + h)$ by L'Hospital Rule.
+        \item \begin{align*}
+            \lim_{h\to 0} \dfrac{f(a+2h)-2f(a+h)+f(a)}{h^2} &= \lim_{h\to 0} \dfrac{f'(a+2h) - f'(a+h)}{h}\\
+            &= 2\lim_{h\to 0} \dfrac{f'(a + 2h) - f'(a)}{2h} - \lim_{h\to 0}\dfrac{f'(a + h) - f'(a)}{h}\\
+            &= 2f''(a) - f''(a) = f''(a)
+        \end{align*}    
+        Thus, $\displaystyle\lim_{h\to 0} \dfrac{f(a+2h)-2f(a+h)+f(a)}{h^2} = f''(a)$.
 
-        Since $f$ is is three times differentiable, then $f''$ is continuous.
-        Thus, we can find $\delta_1 > 0$ s.t. $|f''(a+h) - f''(a)| < \dfrac{\epsilon}{3}$ for all $|h| < \delta_1$,
-        and $\delta_2 > 0$ s.t. $|f''(a + 2h) - f''(a)| < \dfrac{\epsilon}{3}$ for all $|h| < \delta_2$. 
-        Then, for $|h| < \min\{\delta_1, \delta_2\}$, \begin{align*}
-            |2f''(a+2h) - f''(a+h) - f''(a)| &= |f''(a+2h) - f''(a+h)| + |f''(a+2h) - f''(a)|\\
-            &< |f''(a+2h) - f''(a)| + |f''(a) - f(a + h)| + |f''(a + 2h) - f''(a)|\\
-            &\leq \dfrac{\epsilon}{3} + \dfrac{\epsilon}{3} + \dfrac{\epsilon}{3} = \epsilon
+        \item \begin{align*}
+            \lim_{h\to 0} \dfrac{f(a + 3h) - 3f(a + 2h) + 3f(a + h) - f(a)}{h^3} &= \lim_{h\to 0} \dfrac{3f'(a+3h) - 6f'(a + 2h) + 3f(a + h)}{3h^2}\\
+            &= \lim_{h\to 0} \dfrac{f'(a + 3h) - 2f'(a+2h) + f'(a + h)}{h^2}\\
+            &= \lim_{h\to 0} \dfrac{f'(a + 2h) - 2f'(a + h) + f'(a)}{h^2}\\
+            &= f^{(3)}(a)
         \end{align*}
-       
-        Thus, $\displaystyle\lim_{h\to 0}\dfrac{f(a + 2h) - 2f(a + h) + f(a)}{h^2} = f''(a)$.
 
-        \item 
     \end{enumerate}
 \end{enumerate}
 \end{document}

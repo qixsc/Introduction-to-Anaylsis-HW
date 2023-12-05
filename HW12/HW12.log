@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.9.11)  4 DEC 2023 00:04
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.9.11)  5 DEC 2023 15:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -487,12 +487,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
  [1
 
-]
-Overfull \hbox (26.58563pt too wide) detected at line 99
-[]
- []
-
-[2] (HW12.aux)
+] [2] (HW12.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2022/08/05>
@@ -507,4 +502,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  79i,10n,93p,321b,308s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on HW12.xdv (2 pages, 16124 bytes).
+Output written on HW12.xdv (2 pages, 14660 bytes).
