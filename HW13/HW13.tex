@@ -46,6 +46,15 @@
 
     Then, we want to proof for any $\epsilon > 0$, we have a partition $P$ s.t. $|U(f, P) - L(f, p)| < \epsilon$.
 
+    Then, for any $\epsilon > 0$, we take $P$ is partition of $[0, 1]$ which norms are $\dfrac{2}{n(n+1)}$.
+    Since \begin{align*}
+        |U(f, P) - L(f, P)| &= U(f, P)\\
+        &< n \cdot \dfrac{2}{n(n+1)}\\
+        &= \dfrac{2}{n+1}
+    \end{align*}
+    , for any $\epsilon > 0$, we can find $n$ s.t. $U(f, P) < \epsilon$.
+    Thus, $f$ is integrable.
+
 
     \item Since $f$ is bounded, we can find $M\in \mathbb{R}$ s.t. $|f(x)| < M$ for all $x\in [a, b]$.
     Suppose there are $n$ points of discontinuity of $f$ on $[a, b]$.
@@ -55,9 +64,9 @@
     Take partition $P = \lbrace x_1 = y_1 - \epsilon,\ x_2 = y_1 + \epsilon,\ x_3 = y_2-\epsilon,\ \cdots\rbrace$ is finite.
     Then, for $f$ is continuous on $[a, x_1],\ [x_2, x_3],\ [x_4, x_5],\ \cdots$, 
     we only need to check other intervals $P'$ are Reimann integrable.
-    $|U(f, P') - L(f, P')| \leq 2U(f, P') \leq 2\cdot (2\delta) \cdot M = 4M \cdot \dfrac{\epsilon}{4nM} = \epsilon$.
+    $|U(f, P') - L(f, P')| \leq 2U(f, P') \leq 2\cdot n \cdot  (2\delta) \cdot M = 4nM \cdot \dfrac{\epsilon}{4nM} = \epsilon$.
     Thus, $f\in R([a, b])$.
 
-    \item 
+    \item $f^{(n)}(x) = (\displaystyle\prod_{k=0}^{n-1} m-k) (1 + x)^{m-n}$
 \end{enumerate}
 \end{document}
