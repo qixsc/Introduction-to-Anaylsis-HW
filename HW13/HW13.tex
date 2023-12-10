@@ -42,30 +42,23 @@
     
     For $f(x) > \dfrac{1}{n}$, that means $x$ is a rational number $\dfrac{p}{q}$ and $q < n$.
     Thus, we have $x = \dfrac{1}{1},\ \dfrac{1}{2},\ \dfrac{1}{3},\ \dfrac{2}{3},\ \cdots$.
-    The number of $x$ is less than $\dfrac{n(n+1)}{2}$.
+    The number of $x$ is less than $\dfrac{n(n+1)}{2}$. Thus, we suppose $a_n$ is the number of $x$ s.t.  $f(x) > \dfrac{1}{n}$
 
-    Then, we want to proof for any $\epsilon > 0$, we have a partition $P$ s.t. $|U(f, P) - L(f, p)| < \epsilon$.
-
-    Then, for any $\epsilon > 0$, we take $P$ is partition of $[0, 1]$ which norms are $\dfrac{2}{n(n+1)}$.
-    Since \begin{align*}
-        |U(f, P) - L(f, P)| &= U(f, P)\\
-        &< n \cdot \dfrac{2}{n(n+1)}\\
-        &= \dfrac{2}{n+1}
-    \end{align*}
-    , for any $\epsilon > 0$, we can find $n$ s.t. $U(f, P) < \epsilon$.
-    Thus, $f$ is integrable.
+    For any $n\in \mathbb{N}$, we can find a $\delta > 0$ and  partition $P_n = \displaystyle\bigcup^n\ [x_i - \delta, x_i + \delta]$ s.t. $x_i$ is the only point $x\in [x_i-\delta, x_i + \delta]$ that $f(x) > \dfrac{1}{n}$  and $P_n' = [0, 1]\setminus P_n$.
+    Thus, $|U(f, P_n) - L(f, P_n)| + |U(f, P_n') - L(f, P_n')| = U(f, p) + U(f, P_n') < a_n\cdot(2\delta\cdot 1) + (1-a_n\cdot 2\delta)\dfrac{1}{n} = \dfrac{1}{n}$.
+    Thus, we can find large enough $n$ s.t. $f$ is integrable.
 
 
     \item Since $f$ is bounded, we can find $M\in \mathbb{R}$ s.t. $|f(x)| < M$ for all $x\in [a, b]$.
     Suppose there are $n$ points of discontinuity of $f$ on $[a, b]$.
-    
-    Thus, for any $\epsilon > 0$, we take $\delta = \dfrac{\epsilon}{4nM}$.
+    Thus, for any $\epsilon > 0$, we take $\delta = \dfrac{\epsilon}{8nM}$.
     Then, suppose the set of points of discontinuity is $\lbrace y_i\mid i \in \mathbb{N}, i \leq n\rbrace$.
     Take partition $P = \lbrace x_1 = y_1 - \epsilon,\ x_2 = y_1 + \epsilon,\ x_3 = y_2-\epsilon,\ \cdots\rbrace$ is finite.
     Then, for $f$ is continuous on $[a, x_1],\ [x_2, x_3],\ [x_4, x_5],\ \cdots$, 
-    we only need to check other intervals $P'$ are Reimann integrable.
-    $|U(f, P') - L(f, P')| \leq 2U(f, P') \leq 2\cdot n \cdot  (2\delta) \cdot M = 4nM \cdot \dfrac{\epsilon}{4nM} = \epsilon$.
-    Thus, $f\in R([a, b])$.
+    we can find a partition $P_1$ s.t. $|U(f, P_1) - L(f, P_2)| < \dfrac{\epsilon}{2}$
+    we only need to check other intervals $P_2 = [x_1, x_2]\bigcup [x_3, x_4]\bigcup \cdots \bigcup [x_{2n-1}, x_{2n}]$ are Reimann integrable.
+    $|U(f, P_2) - L(f, P_2)| \leq 2U(f, P_2) \leq 2\cdot n \cdot  (2\delta) \cdot M = 4nM \cdot \dfrac{\epsilon}{8nM} = \dfrac{\epsilon}{2}$.
+    Thus, $|U(f, P) - L(f, P)| \leq |U(f, P_1) - L(f, P_1)| + |U(f, P_2), L(f, P_2)| < \dfrac{\epsilon}{2} + \dfrac{\epsilon}{2} = \epsilon$, which implies that $f\in R([a, b])$.
 
     \item $f^{(n)}(x) = (\displaystyle\prod_{k=0}^{n-1} m-k) (1 + x)^{m-n}$
 \end{enumerate}
