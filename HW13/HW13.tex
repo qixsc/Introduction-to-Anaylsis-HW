@@ -45,9 +45,8 @@
     The number of $x$ is less than $\dfrac{n(n+1)}{2}$. Thus, we suppose $a_n$ is the number of $x$ s.t.  $f(x) > \dfrac{1}{n}$
 
     For any $n\in \mathbb{N}$, we can find a $\delta > 0$ and  partition $P_n = \displaystyle\bigcup^n\ [x_i - \delta, x_i + \delta]$ s.t. $x_i$ is the only point $x\in [x_i-\delta, x_i + \delta]$ that $f(x) > \dfrac{1}{n}$  and $P_n' = [0, 1]\setminus P_n$.
-    Thus, $|U(f, P_n) - L(f, P_n)| + |U(f, P_n') - L(f, P_n')| = U(f, p) + U(f, P_n') < a_n\cdot(2\delta\cdot 1) + (1-a_n\cdot 2\delta)\dfrac{1}{n} = \dfrac{1}{n}$.
-    Thus, we can find large enough $n$ s.t. $f$ is integrable.
-
+    Thus, $|U(f, P_n) - L(f, P_n)| + |U(f, P_n') - L(f, P_n')| = U(f, p) + U(f, P_n') < a_n\cdot(2\delta\cdot 1) + (1-a_n\cdot 2\delta)\dfrac{1}{n} < \dfrac{1}{n} + a_n \cdot 2\delta$.
+    Thus, we can find large enough $n$ and a tiny $\delta$ s.t. $f$ is integrable.
 
     \item Since $f$ is bounded, we can find $M\in \mathbb{R}$ s.t. $|f(x)| < M$ for all $x\in [a, b]$.
     Suppose there are $n$ points of discontinuity of $f$ on $[a, b]$.
@@ -60,6 +59,7 @@
     $|U(f, P_2) - L(f, P_2)| \leq 2U(f, P_2) \leq 2\cdot n \cdot  (2\delta) \cdot M = 4nM \cdot \dfrac{\epsilon}{8nM} = \dfrac{\epsilon}{2}$.
     Thus, $|U(f, P) - L(f, P)| \leq |U(f, P_1) - L(f, P_1)| + |U(f, P_2), L(f, P_2)| < \dfrac{\epsilon}{2} + \dfrac{\epsilon}{2} = \epsilon$, which implies that $f\in R([a, b])$.
 
-    \item $f^{(n)}(x) = (\displaystyle\prod_{k=0}^{n-1} m-k) (1 + x)^{m-n}$
+    \item $f^{(n)}(x) = (\displaystyle\prod_{k=0}^{n-1} m-k) (1 + x)^{m-n}$.
+    $R_n = x^n \dfrac{f^{(n)}(\theta_n x)}{n!} = (\displaystyle\prod_{k=1}^{n}\dfrac{m-k+1}{k}) (1+\theta_n x)^{m-n}x^n$.
 \end{enumerate}
 \end{document}
