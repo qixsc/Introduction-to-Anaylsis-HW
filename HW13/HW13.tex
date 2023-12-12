@@ -59,7 +59,17 @@
     $|U(f, P_2) - L(f, P_2)| \leq 2U(f, P_2) \leq 2\cdot n \cdot  (2\delta) \cdot M = 4nM \cdot \dfrac{\epsilon}{8nM} = \dfrac{\epsilon}{2}$.
     Thus, $|U(f, P) - L(f, P)| \leq |U(f, P_1) - L(f, P_1)| + |U(f, P_2), L(f, P_2)| < \dfrac{\epsilon}{2} + \dfrac{\epsilon}{2} = \epsilon$, which implies that $f\in R([a, b])$.
 
+    \newpage
     \item $f^{(n)}(x) = (\displaystyle\prod_{k=0}^{n-1} m-k) (1 + x)^{m-n}$.
     $R_n = x^n \dfrac{f^{(n)}(\theta_n x)}{n!} = (\displaystyle\prod_{k=1}^{n}\dfrac{m-k+1}{k}) (1+\theta_n x)^{m-n}x^n$.
+
+    For $m > 0$, we can find $N\in \mathbb{N}$ s.t. $N > m$ and $N-1 \leq m$.
+    Since $x > 0$, $1 + \theta_n x > 1$, $(1+\theta_n x)^{m-n} < 1$ for $n > N$.
+    And since $n > N > M$, $\displaystyle\prod_{k=1}^{n}\dfrac{m-k+1}{k} = \dfrac{m}{N} \cdot \dfrac{m-1}{N-1} \cdots \dfrac{m-N+1}{1} \cdot \dfrac{m-N}{N+1}\cdots < 1$.
+    Thus, $R_n < x^n$ for $m > 0$ and $n > m$.
+    
+    For $m < 0$, since $|\dfrac{m-k}{k}| > |\dfrac{m-k-1}{k+1}| > \cdots > 1$,
+    there exists $N\in \mathbb{N}$ s.t. $|\dfrac{m-n}{n}| < \dfrac{1}{x}$ for all $n > N$.
+    Thus, $R_n < \displaystyle\prod_{k=1}^{n} (\dfrac{m-k+1}{k}x) = A\cdot \displaystyle\prod_{k=N}^{^n} \dfrac{m-k+1}{k}x \to 0$ as $n\to\infty$ since $\dfrac{m-k+1}{k}x < l < 1$ for all $n \geq N$.
 \end{enumerate}
 \end{document}
