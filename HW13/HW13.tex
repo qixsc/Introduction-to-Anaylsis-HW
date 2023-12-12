@@ -70,6 +70,7 @@
     
     For $m < 0$, since $|\dfrac{m-k}{k}| > |\dfrac{m-k-1}{k+1}| > \cdots > 1$,
     there exists $N\in \mathbb{N}$ s.t. $|\dfrac{m-n}{n}| < \dfrac{1}{x}$ for all $n > N$.
-    Thus, $R_n < \displaystyle\prod_{k=1}^{n} (\dfrac{m-k+1}{k}x) = A\cdot \displaystyle\prod_{k=N}^{^n} \dfrac{m-k+1}{k}x \to 0$ as $n\to\infty$ since $\dfrac{m-k+1}{k}x < l < 1$ for all $n \geq N$.
+    Therefore, we can find $l < 1$ s.t. $|\dfrac{m-n}{n}x| < l$ for all $n > N$.
+    Thus, $|R_n| < |\displaystyle\prod_{k=1}^{n} (\dfrac{m-k+1}{k}x)| = |A|\cdot |\displaystyle\prod_{k=N}^{^n} \dfrac{m-k+1}{k}x| < |A|\cdot l^{n-N} \to 0$ as $n\to\infty$.
 \end{enumerate}
 \end{document}
