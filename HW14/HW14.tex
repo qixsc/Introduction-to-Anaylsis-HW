@@ -79,6 +79,18 @@
             $A'(x) = $
     \end{enumerate}
     
-    \item 
+    \item Since $f$ is continuous on $[a, b]$, $f$ is uniform continuous and exists $c\in [a, b]$ s.t. $f(c) = M$.
+    And let $I_n = (\displaystyle\int_a^b (|f(x)|)^n dx)^{\frac{1}{n}}$.
+    
+    Then, for all $\epsilon > 0$, there exists $\delta > 0$ s.t. if $x \in (c-\delta, c+\delta)\bigcap [a, b]$,
+    $|f(x) - M| < \epsilon\implies f(x) \geq M - \epsilon$.
+
+    Thus, $I_n \geq (\dfrac{1}{2\delta})^{\frac{1}{n}}(M-\epsilon)$.
+    And since $f(x) \leq M$ for all $x$, $I_n \leq (\dfrac{1}{b-a})^\frac{1}{n} M$.
+
+    Then, we can get for all $\epsilon > 0$ and some $\delta > 0$, $(\dfrac{1}{2\delta})^{\frac{1}{n}}(M-\epsilon) \leq I_n \leq (\dfrac{1}{b-a})^\frac{1}{n} M$.
+    And since $r^{\frac{1}{n}} \to 1$ as $n \to \infty$ for all $r > 0$, $\displaystyle\lim_{n\to \infty} (\dfrac{1}{2\delta})^{\frac{1}{n}}(M-\epsilon) =M$ and $\displaystyle\lim_{n\to\infty} (\dfrac{1}{b-a})^\frac{1}{n} M = M$.
+    
+    By squeeze theorem, $\displaystyle\lim_{n\to\infty} I_n = M$.
 \end{enumerate}
 \end{document}
