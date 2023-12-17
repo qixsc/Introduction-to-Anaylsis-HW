@@ -46,15 +46,39 @@
         If $u^p = v^q$, $\dfrac{u^p}{p} + \dfrac{v^q}{q} = (\dfrac{1}{p} + \dfrac{1}{q}) u^p = u^p = u^{p(\frac{1}{p} + \frac{1}{q})} = u\cdot u^{\frac{p}{q}} = uv$.
 
         \item $\displaystyle\int_a^b \dfrac{(f(x))^p}{p} dx= \dfrac{1}{p}$ and $\displaystyle\int_a^b \dfrac{(g(x))^q}{q} = \dfrac{1}{q}$.
-        
         Then, $\displaystyle\int_a^b \dfrac{(f(x))^p}{p} + \dfrac{(g(x))^q}{q} dx = \dfrac{1}{p} + \dfrac{1}{q} = 1$.
 
         And since $f(x)g(x) \leq \dfrac{(f(x)^p)}{p} + \dfrac{(g(x))^q}{q}$ for all $x\in [a, b]$ and $f, g$ are Reimann integral,
         $\displaystyle\int_a^b f(x)g(x) dx$ exists and $\displaystyle\int_a^b f(x) g(x) dx \leq \displaystyle\int_a^b \dfrac{(f(x))^p}{p} + \dfrac{(g(x))^q}{q} dx = 1$.
 
-        \item 
+        \item Take $F = \displaystyle\int_a^b |f(x)|^p dx, \displaystyle\int_a^b |g(x)|^q dx$.
+        
+        Then, \begin{align*}
+            \dfrac{|\int_a^b f(x)g(x) dx|}{F^{\frac{1}{p}}G^{\frac{1}{q}}} &\leq \dfrac{\int_a^b |f(x)||g(x)| dx}{F^\frac{1}{p}G^{\frac{1}{q}}}\\
+            &= \int_a^b (\dfrac{|f(x)|^p}{F})^{\frac{1}{p}} (\dfrac{|g(x)|^p}{G})^{\frac{1}{q}} dx\\
+            &\leq \int_a^b \dfrac{1}{p}(\dfrac{|f(x)|^p}{F})+ \dfrac{1}{q}(\dfrac{|g(x)|^q}{G}) dx\\
+            &=\dfrac{1}{p} (\dfrac{\int_a^b |f(x)|^p dx}{F})^{\frac{1}{p}} + \dfrac{1}{q}(\dfrac{\int_a^b |g(x)|^q dx}{G})^{\frac{1}{q}}\\
+            &= \dfrac{1}{p} = \dfrac{1}{q} = 1
+        \end{align*}
+
+        \newpage
+        Thus, $|\displaystyle\int_a^b f(x) g(x) dx| \leq (\displaystyle\int_a^b |f(x)|^p dx)^{\frac{1}{p}} (\displaystyle\int_a^b |g(x)|^q dx)^{\frac{1}{q}}$.
     \end{enumerate}
 
+    \item \begin{enumerate}
+        \item Take $\delta = \dfrac{1}{2^{n+1}}$ and $P = \lbrace 0, \dfrac{1}{2^n}, \dfrac{1}{2^n}, \dfrac{1}{2^n} + \delta, \dfrac{1}{2^{n-1}}, \dfrac{1}{2^{n-1}} + \delta, \cdots, \dfrac{1}{2}+\delta, 1\rbrace$.
+
+        Then, \begin{align*}
+            U(f, P) - L(f, P) &= \delta \cdots (1 - \dfrac{1}{2} +\dfrac{1}{2} - \dfrac{1}{2^2} + \cdots + \dfrac{1}{2^{n-1}}-\dfrac{1}{2^n}) + \dfrac{1}{2^n}(\dfrac{1}{2^n} - 0)\\
+            &= \dfrac{1}{2^{n+1}} \cdot \dfrac{1}{2^n} + \dfrac{1}{2^{2n}}\\
+            &< \dfrac{1}{2^{2n-1}} \to 0\text{ as } n\to \infty
+        \end{align*}
+
+            \item $F(x) = xA(x) - \dfrac{1}{3}A(x)^2$, then $F'(x) = (A(x) + xA'(x)) - \dfrac{2}{3} A(x) A'(x)$.
+            
+            $A'(x) = $
+    \end{enumerate}
+    
     \item 
 \end{enumerate}
 \end{document}

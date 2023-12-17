@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.9.11)  16 DEC 2023 22:11
+This is XeTeX, Version 3.141592653-2.6-0.999995 (MiKTeX 23.5) (preloaded format=xelatex 2023.9.11)  17 DEC 2023 19:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -486,25 +486,25 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
 
-Overfull \hbox (17.15906pt too wide) in paragraph at lines 52--54
+Overfull \hbox (17.15906pt too wide) in paragraph at lines 51--53
 []\TU/TimesNewRoman(0)/m/n/12 And since $\OML/ztmcm/m/it/12 f\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 x\OT1/ztmcm/m/n/12 )\OML/ztmcm/m/it/12 g\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 x\OT1/ztmcm/m/n/12 ) \OMS/ztmcm/m/n/12 ^^T [] \OT1/ztmcm/m/n/12 + []$ \TU/TimesNewRoman(0)/m/n/12 for all $\OML/ztmcm/m/it/12 x \OMS/ztmcm/m/n/12 2 \OT1/ztmcm/m/n/12 [\OML/ztmcm/m/it/12 a; b\OT1/ztmcm/m/n/12 ]$ \TU/TimesNewRoman(0)/m/n/12 and $\OML/ztmcm/m/it/12 f; g$ \TU/TimesNewRoman(0)/m/n/12 are Reimann integral, $[][] \OML/ztmcm/m/it/12 f\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 x\OT1/ztmcm/m/n/12 )\OML/ztmcm/m/it/12 g\OT1/ztmcm/m/n/12 (\OML/ztmcm/m/it/12 x\OT1/ztmcm/m/n/12 )\OML/ztmcm/m/it/12 dx$
  []
 
 [1
 
-] (HW14.aux)
+] [2] (HW14.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2022/08/05>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 7114 strings out of 411164
- 182229 string characters out of 5809999
- 1855394 words of memory out of 5000000
- 27572 multiletter control sequences out of 15000+600000
- 532927 words of font info for 106 fonts, out of 8000000 for 9000
+ 7120 strings out of 411164
+ 182459 string characters out of 5809999
+ 1861394 words of memory out of 5000000
+ 27576 multiletter control sequences out of 15000+600000
+ 532943 words of font info for 108 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 79i,6n,93p,292b,259s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,11n,93p,301b,321s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on HW14.xdv (1 page, 6088 bytes).
+Output written on HW14.xdv (2 pages, 10996 bytes).
