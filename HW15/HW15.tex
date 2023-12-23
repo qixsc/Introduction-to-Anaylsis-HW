@@ -39,8 +39,21 @@
 \maketitle
 \begin{enumerate}
     \item \begin{enumerate}
-        \item For $y_0 \in [c, d]$ and any $\epsilon > 0$, we know that for $x\in [a, b]$,
-        there exists $\delta_x > 0$ s.t. $\| (x, y) - (x, y_0)\| = (y-y_0)^2 < \delta$, $|f(x, y) - f(x, y_0)| < \epsilon$.
+        \item For any $y\in [c, d]$, we can find a partition $P_y = $
+
+        \item $F'(y) = \displaystyle\lim_{h\to 0} \dfrac{F(y+h) - F(y)}{h} = \displaystyle\int_a^b \displaystyle\lim_{h\to 0} \dfrac{f(x, y+h) - f(x, y)}{h} dx = \displaystyle\int_a^b \dfrac{\partial f}{\partial y}(x, y) dx$.
     \end{enumerate}
+
+    \item\begin{enumerate}
+        \item $g'(x) = \displaystyle\int_0^1 -2(t^2+1)x\dfrac{e^{-x^2(t^2 + 1)}}{t^2+1}dt = \displaystyle\int_0^1 -2xe^{-x^2(t^2+1)} dt$.
+        
+        $f'(x) = e^{-x^2}(\displaystyle\int_0^x e^{-t^2} dt)$
+
+        Since $f'(x) + g'(x) = 0$ for all $x$, $f(x) + g(x) = f(0) + g(0) = g(0) = \displaystyle\int_0^1 \dfrac{1}{t^2 + 1} dt =\displaystyle\int_0^\frac{\pi}{4} du = \dfrac{\pi}{4}$.
+
+        \item Since $g(x) \to 0$ as $x \to \infty$, $f(x) \to \dfrac{\pi}{4}$.
+        Then, $\displaystyle\lim_{x\to\infty} \displaystyle\int_0^x e^{-t^2} dt = \displaystyle\lim_{x\to\infty} \sqrt{f(x)} = \sqrt{\dfrac{\pi}{4}} = \dfrac{\sqrt{\pi}}{2}$.
+    \end{enumerate}
+    
 \end{enumerate}
 \end{document}
