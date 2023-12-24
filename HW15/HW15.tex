@@ -56,7 +56,7 @@
     \end{enumerate}
 
     \item \begin{enumerate}
-        \item If $L = \lim_{x \to \infty} f(x) > 0$, we can find a $N\in\mathbb{N}$ s.t. $f(x) > \dfrac{L}{2}$.
+        \item If $L = \lim_{x \to \infty} f(x) > 0$, we can find a $N\in\mathbb{N}$ s.t. $f(x) > \dfrac{L}{2}$ for all $x > N$.
         
         Then, for $t > N$, $\displaystyle\int_0^t f(x) dx = \displaystyle\int_0^N f(x) dx + (t-N)\dfrac{L}{2}$.
         Thus, $\displaystyle\lim_{t\to\infty} \displaystyle\int_0^t f(x) dx = \infty$ doesn't exists(contradiction).
@@ -70,6 +70,5 @@
 
         Since $\displaystyle\sum_{i=1}^{\infty} 2^{-i} = 1 < \infty$, $\displaystyle\lim_{x \to \infty}\displaystyle\int_0^x f(t) dt \leq 1$, $f$ is improperly integrable.
     \end{enumerate}
-    
 \end{enumerate}
 \end{document}
