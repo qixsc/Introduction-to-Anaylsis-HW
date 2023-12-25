@@ -39,24 +39,43 @@
 \maketitle
 \begin{enumerate}
     \item \begin{enumerate}
-        \item For any $y\in [c, d]$, we can find a partition $P_y = $
+        \item Since $f$ is continuous on $Q$ is compact, $\exists \delta > 0$ s.t. for all $\alpha_1, \alpha_2\in Q$, $\| \alpha_1 - \alpha_2\| < \delta$, 
+        
+        $|f(\alpha_1) - f(\alpha_2)| < \dfrac{\epsilon}{b-a}$.
+        
+        Thus, for $y_0 \in [c, d]$,\begin{align*}
+        |F(y) - F(y_0)| &= |\int_a^b f(x, y) dx - \int_a^b f(x, y_0) dx|\\
+        &\leq \int_a^b |f(x, y) - f(x, y_0)| dx\\
+        &< (b-a) \cdot \dfrac{\epsilon}{b-a} = \epsilon
+        \end{align*}
 
-        \item $F'(y) = \displaystyle\lim_{h\to 0} \dfrac{F(y+h) - F(y)}{h} = \displaystyle\int_a^b \displaystyle\lim_{h\to 0} \dfrac{f(x, y+h) - f(x, y)}{h} dx = \displaystyle\int_a^b \dfrac{\partial f}{\partial y}(x, y) dx$.
+        Thus, $\displaystyle\lim_{y\to y_0}\displaystyle\int_a^b f(x, y) dx = \displaystyle\int_a^b f(x, y_0) dx = \displaystyle\int_a^b \displaystyle\lim_{y\to y_0} f(x, y)dx$.
+
+        \item Since $\dfrac{\partial F}{\partial y}$ is continuous on $Q$, then $\dfrac{\partial F}{\partial y}$ exists for all $y\in (c, d)$
+        
+        $F'(y) = \displaystyle\lim_{h\to 0} \dfrac{F(y+h) - F(y)}{h} = \displaystyle\int_a^b \displaystyle\lim_{h\to 0} \dfrac{f(x, y+h) - f(x, y)}{h} dx = \displaystyle\int_a^b \dfrac{\partial f}{\partial y}(x, y) dx$.
     \end{enumerate}
 
     \item\begin{enumerate}
-        \item $g'(x) = \displaystyle\int_0^1 -2(t^2+1)x\dfrac{e^{-x^2(t^2 + 1)}}{t^2+1}dt = \displaystyle\int_0^1 -2xe^{-x^2(t^2+1)} dt$.
+        \item By 1(b), $g'(x) = \displaystyle\int_0^1 -2(t^2+1)x\dfrac{e^{-x^2(t^2 + 1)}}{t^2+1}dt = \displaystyle\int_0^1 -2xe^{-x^2(t^2+1)} dt$.
         
-        $f'(x) = 2e^{-x^2}(\displaystyle\int_0^x e^{-t^2} dt)$
+        By Fundamental Theorem of Calculus, $f'(x) = 2e^{-x^2}(\displaystyle\int_0^x e^{-t^2} dt)$
 
-        Since $f'(x) + g'(x) = 0$ for all $x$, $f(x) + g(x) = f(0) + g(0) = g(0) = \displaystyle\int_0^1 \dfrac{1}{t^2 + 1} dt =\displaystyle\int_0^\frac{\pi}{4} du = \dfrac{\pi}{4}$.
+        Thus, take $u = xt$, $du = xdt$\begin{align*}
+            f'(x) + g'(x) &= 2e^{-x^2}(\int_0^x e^{-t^2} dt) + \int_0^1 -2xe^{-x^2(t^2)+1} dt\\
+            &= 2e^{-x^2}(\int_0^x e^{-t^2} dt) - 2e^{-x^2}\int_0^1 xe^{-x^2t^2} dt\\
+            &= 2e^{-x^2}(\int_0^x e^{-t^2} dt - \int_0^x e^{-u^2} du)\\
+            &= 2e^{-x^2} \cdot 0 = 0
+        \end{align*}
+
+        Since $f'(x) + g'(x) = 0$ for all $x$, $f(x) + g(x) = f(0) + g(0) + \displaystyle\int_0^x f'(x) + g'(x) dx = g(0) = \displaystyle\int_0^1 \dfrac{1}{t^2 + 1} dt =\displaystyle\int_0^\frac{\pi}{4} du = \dfrac{\pi}{4}$.
 
         \item Since $g(x) \to 0$ as $x \to \infty$, $f(x) \to \dfrac{\pi}{4}$.
         Then, $\displaystyle\lim_{x\to\infty} \displaystyle\int_0^x e^{-t^2} dt = \displaystyle\lim_{x\to\infty} \sqrt{f(x)} = \sqrt{\dfrac{\pi}{4}} = \dfrac{\sqrt{\pi}}{2}$.
     \end{enumerate}
 
     \item \begin{enumerate}
-        \item If $L = \lim_{x \to \infty} f(x) > 0$, we can find a $N\in\mathbb{N}$ s.t. $f(x) > \dfrac{L}{2}$ for all $x > N$.
+        \item If $L = \displaystyle\lim_{x \to \infty} f(x) > 0$, we can find a $N\in\mathbb{N}$ s.t. $f(x) > \dfrac{L}{2}$ for all $x > N$.
         
         Then, for $t > N$, $\displaystyle\int_0^t f(x) dx = \displaystyle\int_0^N f(x) dx + (t-N)\dfrac{L}{2}$.
         Thus, $\displaystyle\lim_{t\to\infty} \displaystyle\int_0^t f(x) dx = \infty$ doesn't exists(contradiction).
